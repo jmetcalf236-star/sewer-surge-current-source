@@ -1,0 +1,53 @@
+Add the following event types to the app's `src/game/typesBookEvent.ts`.
+The sample below follows the public Web SDK BookEvent pattern. Preserve all
+existing event variants and add the three Sewer Surge types to the BookEvent union.
+
+--- types to add ---
+
+type SewerPipeType = 'I' | 'L' | 'T' | 'X' | 'W' | 'S';
+type SewerScatterTier = 'none' | 'bonus' | 'deep-run';
+type SewerPipeCell = { t: SewerPipeType; r: 0 | 1 | 2 | 3; s: boolean };
+
+type BookEventSewerBoard = {
+  index: number;
+  type: 'sewerBoard';
+  board: SewerPipeCell[][]; // row-major [row][column], always 5x5
+  inlet: number; // 0..4, west inlet row
+  scatterCount: number;
+  scatterTier: SewerScatterTier;
+  waterEntry: 'west';
+  waterExit: 'east';
+  routeAuthority: 'visual-only';
+  schemaVersion: 1;
+};
+
+type BookEventSewerFeature = {
+  index: number;
+  type: 'sewerFeature';
+  feature: 'bonus' | 'deep-run';
+  scatterCount: number;
+  routeAuthority: 'visual-only';
+};
+
+type BookEventSewerAward = {
+  index: number;
+  type: 'sewerAward';
+  amount: number; // official SDK integer cents: 100 = 1.00x
+  payoutMultiplier: number; // same authoritative integer-cent value
+  scatterTier: SewerScatterTier;
+  maxWinCapped: boolean;
+};
+
+--- union additions ---
+
+Add these three variants to the exported `BookEvent` union:
+
+  | BookEventSewerBoard
+  | BookEventSewerFeature
+  | BookEventSewerAward;
+
+Keep the normal aliases unchanged:
+
+export type Bet = BetType<BookEvent>;
+export type BookEventOfType<T> = Extract<BookEvent, { type: T }>;
+export type BookEventContext = { bookEvents: BookEvent[] };

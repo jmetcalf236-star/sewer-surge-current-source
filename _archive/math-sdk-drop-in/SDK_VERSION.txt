@@ -1,0 +1,13 @@
+Math SDK repository: https://github.com/engineio/math-sdk
+Exact pinned commit: 0842bb244cb8c15e63af541054710a8082901e2f
+
+The game's compatibility layer was checked against this commit's public API signatures:
+- GeneralGameState.reset_seed(sim=0)
+- GeneralGameState.run_spin(sim)
+- GeneralGameState.run_freespin()
+- Config.construct_paths(game_id)
+- Board.draw_board(emit_event=True)
+
+The current local test execution uses the SDK source snapshot bundled in the uploaded workspace,
+not a fresh installation of this exact commit. A clean exact-pin install and production run remain
+required before release.

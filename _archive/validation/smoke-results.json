@@ -1,0 +1,158 @@
+{
+  "date": "2026-11-01",
+  "classification": "debug smoke only; not production math",
+  "sdk_smoke": {
+    "generation_method": "Stake Engine Math SDK create_books() and generate_configs()",
+    "books_per_mode": 100,
+    "compressed_books": true,
+    "zstd_frames_validated_by": "zstd -t",
+    "book_lut_sha256_and_payout_hash_checks": "passed for all four modes",
+    "sdk_fast_path_statistical_gates": "failed on unoptimized raw distributions",
+    "statistics": "failed on pre-optimization debug books; see per-mode raw statistics"
+  },
+  "modes": {
+    "base": {
+      "cost": 1,
+      "books": 100,
+      "lut_rows": 100,
+      "tiers": {
+        "none": 79,
+        "bonus": 10,
+        "deep-run": 11
+      },
+      "scatter_counts": {
+        "0": 61,
+        "1": 16,
+        "2": 2,
+        "3": 10,
+        "4": 7,
+        "5": 4
+      },
+      "raw_rtp_ratio": 103.006,
+      "raw_rtp_percent": 10300.6,
+      "max_payout_x": 10000,
+      "book_lut_payouts_match": true,
+      "payout_hash": "0e675e98aaeba16fc11985866ea181b6",
+      "book_sha256": "06625bc0345acd08d6c1f350372b481062a842d6734e95c505d401a633b513c7",
+      "sdk_stats": {
+        "rtp": 103.006,
+        "average_win": 103.006,
+        "max_win": 1000000.0,
+        "prob10k": 0.01,
+        "etl40b": 100.0,
+        "etl10k": 100.0,
+        "cvar": 10000.0
+      },
+      "rtp_target_passed": false
+    },
+    "ante": {
+      "cost": 3,
+      "books": 100,
+      "lut_rows": 100,
+      "tiers": {
+        "none": 59,
+        "bonus": 20,
+        "deep-run": 21
+      },
+      "scatter_counts": {
+        "0": 48,
+        "1": 11,
+        "3": 20,
+        "4": 15,
+        "5": 6
+      },
+      "raw_rtp_ratio": 34.654,
+      "raw_rtp_percent": 3465.4,
+      "max_payout_x": 10000,
+      "book_lut_payouts_match": true,
+      "payout_hash": "b766c70a7f9e5a68755462cc6f0a9135",
+      "book_sha256": "566ee7bd9c513f4d4a5d26c0fbea32ac8ea8d21c4ad0daee1ffa3a2062f56c73",
+      "sdk_stats": {
+        "rtp": 34.654,
+        "average_win": 103.963,
+        "max_win": 1000000.0,
+        "prob10k": 0.01,
+        "etl40b": 100.0,
+        "etl10k": 100.0,
+        "cvar": 3333.333
+      },
+      "rtp_target_passed": false
+    },
+    "bonus": {
+      "cost": 100,
+      "books": 100,
+      "lut_rows": 100,
+      "tiers": {
+        "bonus": 100
+      },
+      "scatter_counts": {
+        "3": 100
+      },
+      "raw_rtp_ratio": 2.0385,
+      "raw_rtp_percent": 203.85,
+      "max_payout_x": 10000,
+      "book_lut_payouts_match": true,
+      "payout_hash": "8cf73d6cbbb90c493b30eacddcca9a93",
+      "book_sha256": "de0a77a3ab6e02e99a4a7801974a2130f00c6471b0f59ca60b3b4ff02e390df6",
+      "sdk_stats": {
+        "rtp": 2.038,
+        "average_win": 203.85,
+        "max_win": 1000000.0,
+        "prob10k": 0.01,
+        "etl40b": 100.0,
+        "etl10k": 100.0,
+        "cvar": 100.0
+      },
+      "rtp_target_passed": false
+    },
+    "super_bonus": {
+      "cost": 500,
+      "price_status": "confirmed by owner",
+      "books": 100,
+      "lut_rows": 100,
+      "tiers": {
+        "deep-run": 100
+      },
+      "scatter_counts": {
+        "4": 78,
+        "5": 22
+      },
+      "raw_rtp_ratio": 1.243,
+      "raw_rtp_percent": 124.3,
+      "max_payout_x": 10000,
+      "book_lut_payouts_match": true,
+      "payout_hash": "3accace526e92fbd48e376119c87b1c5",
+      "book_sha256": "ab230a9135556ed460de0f4c32503a30a61dd04425487b2f22bf8c862fb3eb80",
+      "sdk_stats": {
+        "rtp": 1.243,
+        "average_win": 621.5,
+        "max_win": 1000000.0,
+        "prob10k": 0.005,
+        "etl40b": 0,
+        "etl10k": 100.0,
+        "cvar": 20.0
+      },
+      "rtp_target_passed": false
+    }
+  },
+  "ante_feature_probability_targets": {
+    "base_bonus_hit_rate_denominator": 35.7,
+    "ante_bonus_hit_rate_denominator": 7.14,
+    "base_deep_run_hit_rate_denominator": 100,
+    "ante_deep_run_hit_rate_denominator": 20,
+    "base_combined_probability": 0.03801120448179272,
+    "ante_combined_probability": 0.19005602240896358,
+    "ratio": 5.0,
+    "status": "configured optimization target only; not a measured final probability"
+  },
+  "known_blockers": [
+    "Rust/Cargo optimizer not run",
+    "Python zstandard==0.23.0 not installed; smoke compression used temporary system-zstd adapter",
+    "exact pinned SDK commit not freshly installed for clean validation",
+    "optimized RTP/volatility/statistical gates not passed",
+    "KingWin provider number and accepted game ID not supplied",
+    "Super Bonus price 500x confirmed by owner",
+    "production Web SDK app not merged/built; Vite unavailable",
+    "live external RGS/provider verification not run"
+  ]
+}

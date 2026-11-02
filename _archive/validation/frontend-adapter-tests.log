@@ -1,0 +1,100 @@
+TAP version 13
+# (node:11439) ExperimentalWarning: Type Stripping is an experimental feature and might change at any time
+# (Use `node --trace-warnings ...` to show where the warning was created)
+# Subtest: accepts an authoritative 5x5 book with a real connected branch
+not ok 1 - accepts an authoritative 5x5 book with a real connected branch
+  ---
+  duration_ms: 1.513366
+  type: 'test'
+  location: '/mnt/data/sewer-surge-submission/web-sdk-integration/apps/sewer-surge/tests/sewerSurgeAdapter.test.mjs:40:1'
+  failureType: 'testCodeFailure'
+  error: 'Invalid Sewer Surge book: zero to two scatters must not emit a feature event'
+  code: 'ERR_TEST_FAILURE'
+  stack: |-
+    assert (file:///mnt/data/sewer-surge-submission/web-sdk-integration/apps/sewer-surge/src/game/sewerSurgeAdapter.ts:29:25)
+    validateSewerBookEvents (file:///mnt/data/sewer-surge-submission/web-sdk-integration/apps/sewer-surge/src/game/sewerSurgeAdapter.ts:138:5)
+    TestContext.<anonymous> (file:///mnt/data/sewer-surge-submission/web-sdk-integration/apps/sewer-surge/tests/sewerSurgeAdapter.test.mjs:41:17)
+    Test.runInAsyncScope (node:async_hooks:214:14)
+    Test.run (node:internal/test_runner/test:1047:25)
+    Test.start (node:internal/test_runner/test:944:17)
+    startSubtestAfterBootstrap (node:internal/test_runner/harness:296:17)
+  ...
+# Subtest: rejects a T symbol that has no second connected exit
+ok 2 - rejects a T symbol that has no second connected exit
+  ---
+  duration_ms: 0.572068
+  type: 'test'
+  ...
+# Subtest: rejects player route choices in the authoritative board event
+ok 3 - rejects player route choices in the authoritative board event
+  ---
+  duration_ms: 0.145963
+  type: 'test'
+  ...
+# Subtest: reconstructs custom events preserved inside an RGS resume snapshot
+not ok 4 - reconstructs custom events preserved inside an RGS resume snapshot
+  ---
+  duration_ms: 0.20244
+  type: 'test'
+  location: '/mnt/data/sewer-surge-submission/web-sdk-integration/apps/sewer-surge/tests/sewerSurgeAdapter.test.mjs:61:1'
+  failureType: 'testCodeFailure'
+  error: 'Invalid Sewer Surge book: zero to two scatters must not emit a feature event'
+  code: 'ERR_TEST_FAILURE'
+  stack: |-
+    assert (file:///mnt/data/sewer-surge-submission/web-sdk-integration/apps/sewer-surge/src/game/sewerSurgeAdapter.ts:29:25)
+    validateSewerBookEvents (file:///mnt/data/sewer-surge-submission/web-sdk-integration/apps/sewer-surge/src/game/sewerSurgeAdapter.ts:138:5)
+    TestContext.<anonymous> (file:///mnt/data/sewer-surge-submission/web-sdk-integration/apps/sewer-surge/tests/sewerSurgeAdapter.test.mjs:63:17)
+    Test.runInAsyncScope (node:async_hooks:214:14)
+    Test.run (node:internal/test_runner/test:1047:25)
+    Test.processPendingSubtests (node:internal/test_runner/test:744:18)
+    Test.postRun (node:internal/test_runner/test:1173:19)
+    Test.run (node:internal/test_runner/test:1101:12)
+    async Test.processPendingSubtests (node:internal/test_runner/test:744:7)
+  ...
+# Subtest: requires a matching wincap event for a 10,000x award
+not ok 5 - requires a matching wincap event for a 10,000x award
+  ---
+  duration_ms: 0.63353
+  type: 'test'
+  location: '/mnt/data/sewer-surge-submission/web-sdk-integration/apps/sewer-surge/tests/sewerSurgeAdapter.test.mjs:67:1'
+  failureType: 'testCodeFailure'
+  error: |-
+    The input did not match the regular expression /10,000× award must include one matching wincap event/. Input:
+    
+    'Error: Invalid Sewer Surge book: zero to two scatters must not emit a feature event'
+    
+  code: 'ERR_ASSERTION'
+  name: 'AssertionError'
+  expected:
+  actual:
+  error: 'Invalid Sewer Surge book: zero to two scatters must not emit a feature event'
+  stack: |-
+    assert (file:///mnt/data/sewer-surge-submission/web-sdk-integration/apps/sewer-surge/src/game/sewerSurgeAdapter.ts:29:25)
+    validateSewerBookEvents (file:///mnt/data/sewer-surge-submission/web-sdk-integration/apps/sewer-surge/src/game/sewerSurgeAdapter.ts:138:5)
+    file:///mnt/data/sewer-surge-submission/web-sdk-integration/apps/sewer-surge/tests/sewerSurgeAdapter.test.mjs:69:11
+    getActual (node:assert:531:5)
+    Function.throws (node:assert:677:24)
+    TestContext.<anonymous> (file:///mnt/data/sewer-surge-submission/web-sdk-integration/apps/sewer-surge/tests/sewerSurgeAdapter.test.mjs:68:10)
+    Test.runInAsyncScope (node:async_hooks:214:14)
+    Test.run (node:internal/test_runner/test:1047:25)
+    Test.processPendingSubtests (node:internal/test_runner/test:744:18)
+    Test.postRun (node:internal/test_runner/test:1173:19)
+  operator: 'throws'
+  stack: |-
+    TestContext.<anonymous> (file:///mnt/data/sewer-surge-submission/web-sdk-integration/apps/sewer-surge/tests/sewerSurgeAdapter.test.mjs:68:10)
+    Test.runInAsyncScope (node:async_hooks:214:14)
+    Test.run (node:internal/test_runner/test:1047:25)
+    Test.processPendingSubtests (node:internal/test_runner/test:744:18)
+    Test.postRun (node:internal/test_runner/test:1173:19)
+    Test.run (node:internal/test_runner/test:1101:12)
+    async Test.processPendingSubtests (node:internal/test_runner/test:744:7)
+  ...
+1..5
+# tests 5
+# suites 0
+# pass 2
+# fail 3
+# cancelled 0
+# skipped 0
+# todo 0
+# duration_ms 157.458251

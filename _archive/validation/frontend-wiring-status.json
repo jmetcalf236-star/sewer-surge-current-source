@@ -1,0 +1,7 @@
+{
+  "custom_win_component_exists": true,
+  "game_imports_custom_win": true,
+  "game_renders_custom_win": true,
+  "game_still_imports_template_win": false,
+  "game_still_renders_template_win": false
+}

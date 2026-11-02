@@ -1,0 +1,65 @@
+{
+    "base": {
+        "gametype": [
+            "basegame"
+        ],
+        "kind": [
+            "3",
+            "4",
+            "5"
+        ],
+        "sewerTier": [
+            "bonus",
+            "deep-run"
+        ],
+        "symbol": [
+            "scatter"
+        ]
+    },
+    "ante": {
+        "gametype": [
+            "basegame"
+        ],
+        "kind": [
+            "3",
+            "4",
+            "5"
+        ],
+        "sewerTier": [
+            "bonus",
+            "deep-run"
+        ],
+        "symbol": [
+            "scatter"
+        ]
+    },
+    "bonus": {
+        "gametype": [
+            "basegame"
+        ],
+        "kind": [
+            "3"
+        ],
+        "sewerTier": [
+            "bonus"
+        ],
+        "symbol": [
+            "scatter"
+        ]
+    },
+    "super_bonus": {
+        "gametype": [
+            "basegame"
+        ],
+        "kind": [
+            "5",
+            "4"
+        ],
+        "sewerTier": [
+            "deep-run"
+        ],
+        "symbol": [
+            "scatter"
+        ]
+    }
+}

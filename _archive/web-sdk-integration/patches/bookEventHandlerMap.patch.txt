@@ -1,0 +1,24 @@
+Add these imports to the app's existing `src/game/bookEventHandlerMap.ts`:
+
+import { publishSewerSurgeBookEvents } from './sewerSurgeAdapter';
+
+Then add the following handlers inside the existing
+`bookEventHandlerMap: BookEventHandlerMap<BookEvent, BookEventContext>` object.
+Do not replace the rest of the app's handlers.
+
+  sewerBoard: async () => {
+    // Board is validated and published when the complete book reaches sewerAward.
+  },
+  sewerFeature: async () => {
+    // Feature animation is presentation-only; the award remains book-authored.
+  },
+  sewerAward: async (_bookEvent, { bookEvents }: BookEventContext) => {
+    // `bookEvents` is the full round sequence; includes the standard finalWin.
+    publishSewerSurgeBookEvents(bookEvents);
+  },
+
+This dispatches a validated `sewer-surge:book` browser event. The Sewer Surge
+view listens for that event and displays the server-authored board and payout.
+The board's branch click handlers must only update the water-path animation.
+Never call a bet/payout endpoint from a branch handler and never recompute a win
+from selected pipe exits.

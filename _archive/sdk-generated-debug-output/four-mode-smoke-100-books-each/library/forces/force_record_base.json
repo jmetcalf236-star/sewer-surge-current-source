@@ -1,0 +1,92 @@
+[
+    {
+        "search": [
+            {
+                "name": "gametype",
+                "value": "basegame"
+            },
+            {
+                "name": "kind",
+                "value": "3"
+            },
+            {
+                "name": "sewerTier",
+                "value": "bonus"
+            },
+            {
+                "name": "symbol",
+                "value": "scatter"
+            }
+        ],
+        "timesTriggered": 10,
+        "bookIds": [
+            1,
+            3,
+            6,
+            15,
+            21,
+            23,
+            42,
+            62,
+            74,
+            96
+        ]
+    },
+    {
+        "search": [
+            {
+                "name": "gametype",
+                "value": "basegame"
+            },
+            {
+                "name": "kind",
+                "value": "4"
+            },
+            {
+                "name": "sewerTier",
+                "value": "deep-run"
+            },
+            {
+                "name": "symbol",
+                "value": "scatter"
+            }
+        ],
+        "timesTriggered": 7,
+        "bookIds": [
+            2,
+            5,
+            10,
+            39,
+            44,
+            82,
+            85
+        ]
+    },
+    {
+        "search": [
+            {
+                "name": "gametype",
+                "value": "basegame"
+            },
+            {
+                "name": "kind",
+                "value": "5"
+            },
+            {
+                "name": "sewerTier",
+                "value": "deep-run"
+            },
+            {
+                "name": "symbol",
+                "value": "scatter"
+            }
+        ],
+        "timesTriggered": 4,
+        "bookIds": [
+            20,
+            43,
+            57,
+            77
+        ]
+    }
+]

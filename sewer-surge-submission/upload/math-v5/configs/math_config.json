@@ -1,0 +1,407 @@
+{
+    "game_id": "0_0_sewersurge",
+    "bet_modes": [
+        {
+            "bet_mode": "base",
+            "cost": 1.0,
+            "rtp": 0.965,
+            "max_win": 50000.0
+        },
+        {
+            "bet_mode": "ante",
+            "cost": 3.0,
+            "rtp": 0.965,
+            "max_win": 50000.0
+        },
+        {
+            "bet_mode": "bonus",
+            "cost": 100.0,
+            "rtp": 0.965,
+            "max_win": 50000.0
+        },
+        {
+            "bet_mode": "super_bonus",
+            "cost": 500.0,
+            "rtp": 0.965,
+            "max_win": 50000.0
+        }
+    ],
+    "fences": [
+        {
+            "bet_mode": "base",
+            "fences": [
+                {
+                    "name": "wincap",
+                    "avg_win": "50000",
+                    "rtp": "0.006",
+                    "identity_condition": {
+                        "search": [],
+                        "win_range_start": 50000,
+                        "win_range_end": 50000,
+                        "opposite": false
+                    }
+                },
+                {
+                    "name": "bonus",
+                    "hr": "35.7",
+                    "rtp": "0.36",
+                    "identity_condition": {
+                        "search": [
+                            {
+                                "name": "symbol",
+                                "value": "scatter"
+                            },
+                            {
+                                "name": "sewerTier",
+                                "value": "bonus"
+                            }
+                        ],
+                        "win_range_start": -1,
+                        "win_range_end": -1,
+                        "opposite": false
+                    }
+                },
+                {
+                    "name": "deep_run",
+                    "hr": "100.0",
+                    "rtp": "0.3",
+                    "identity_condition": {
+                        "search": [
+                            {
+                                "name": "symbol",
+                                "value": "scatter"
+                            },
+                            {
+                                "name": "sewerTier",
+                                "value": "deep-run"
+                            }
+                        ],
+                        "win_range_start": -1,
+                        "win_range_end": -1,
+                        "opposite": false
+                    }
+                },
+                {
+                    "name": "0",
+                    "avg_win": "0.0",
+                    "rtp": "0.0",
+                    "identity_condition": {
+                        "search": [],
+                        "win_range_start": 0,
+                        "win_range_end": 0,
+                        "opposite": false
+                    }
+                },
+                {
+                    "name": "basegame",
+                    "hr": "3.5",
+                    "rtp": "0.299",
+                    "identity_condition": {
+                        "search": [],
+                        "win_range_start": -1,
+                        "win_range_end": -1,
+                        "opposite": false
+                    }
+                }
+            ]
+        },
+        {
+            "bet_mode": "ante",
+            "fences": [
+                {
+                    "name": "wincap",
+                    "avg_win": "50000",
+                    "rtp": "0.006",
+                    "identity_condition": {
+                        "search": [],
+                        "win_range_start": 50000,
+                        "win_range_end": 50000,
+                        "opposite": false
+                    }
+                },
+                {
+                    "name": "bonus",
+                    "hr": "7.14",
+                    "rtp": "0.36",
+                    "identity_condition": {
+                        "search": [
+                            {
+                                "name": "symbol",
+                                "value": "scatter"
+                            },
+                            {
+                                "name": "sewerTier",
+                                "value": "bonus"
+                            }
+                        ],
+                        "win_range_start": -1,
+                        "win_range_end": -1,
+                        "opposite": false
+                    }
+                },
+                {
+                    "name": "deep_run",
+                    "hr": "20.0",
+                    "rtp": "0.3",
+                    "identity_condition": {
+                        "search": [
+                            {
+                                "name": "symbol",
+                                "value": "scatter"
+                            },
+                            {
+                                "name": "sewerTier",
+                                "value": "deep-run"
+                            }
+                        ],
+                        "win_range_start": -1,
+                        "win_range_end": -1,
+                        "opposite": false
+                    }
+                },
+                {
+                    "name": "0",
+                    "avg_win": "0.0",
+                    "rtp": "0.0",
+                    "identity_condition": {
+                        "search": [],
+                        "win_range_start": 0,
+                        "win_range_end": 0,
+                        "opposite": false
+                    }
+                },
+                {
+                    "name": "basegame",
+                    "hr": "2.4",
+                    "rtp": "0.299",
+                    "identity_condition": {
+                        "search": [],
+                        "win_range_start": -1,
+                        "win_range_end": -1,
+                        "opposite": false
+                    }
+                }
+            ]
+        },
+        {
+            "bet_mode": "bonus",
+            "fences": [
+                {
+                    "name": "wincap",
+                    "avg_win": "50000",
+                    "rtp": "0.001",
+                    "identity_condition": {
+                        "search": [],
+                        "win_range_start": 50000,
+                        "win_range_end": 50000,
+                        "opposite": false
+                    }
+                },
+                {
+                    "name": "bonus",
+                    "hr": "x",
+                    "rtp": "0.964",
+                    "identity_condition": {
+                        "search": [
+                            {
+                                "name": "symbol",
+                                "value": "scatter"
+                            },
+                            {
+                                "name": "sewerTier",
+                                "value": "bonus"
+                            }
+                        ],
+                        "win_range_start": -1,
+                        "win_range_end": -1,
+                        "opposite": false
+                    }
+                }
+            ]
+        },
+        {
+            "bet_mode": "super_bonus",
+            "fences": [
+                {
+                    "name": "wincap",
+                    "avg_win": "50000",
+                    "rtp": "0.001",
+                    "identity_condition": {
+                        "search": [],
+                        "win_range_start": 50000,
+                        "win_range_end": 50000,
+                        "opposite": false
+                    }
+                },
+                {
+                    "name": "deep_run",
+                    "hr": "x",
+                    "rtp": "0.964",
+                    "identity_condition": {
+                        "search": [
+                            {
+                                "name": "symbol",
+                                "value": "scatter"
+                            },
+                            {
+                                "name": "sewerTier",
+                                "value": "deep-run"
+                            }
+                        ],
+                        "win_range_start": -1,
+                        "win_range_end": -1,
+                        "opposite": false
+                    }
+                }
+            ]
+        }
+    ],
+    "dresses": [
+        {
+            "bet_mode": "base",
+            "dresses": [
+                {
+                    "fence": "basegame",
+                    "scale_factor": "1.0",
+                    "identity_condition_win_range": [
+                        0.2,
+                        5.0
+                    ],
+                    "prob": 1.0
+                },
+                {
+                    "fence": "bonus",
+                    "scale_factor": "1.0",
+                    "identity_condition_win_range": [
+                        2.0,
+                        300.0
+                    ],
+                    "prob": 1.0
+                },
+                {
+                    "fence": "deep_run",
+                    "scale_factor": "1.0",
+                    "identity_condition_win_range": [
+                        8.0,
+                        1000.0
+                    ],
+                    "prob": 1.0
+                }
+            ]
+        },
+        {
+            "bet_mode": "ante",
+            "dresses": [
+                {
+                    "fence": "basegame",
+                    "scale_factor": "1.0",
+                    "identity_condition_win_range": [
+                        0.6,
+                        15.0
+                    ],
+                    "prob": 1.0
+                },
+                {
+                    "fence": "bonus",
+                    "scale_factor": "1.0",
+                    "identity_condition_win_range": [
+                        2.0,
+                        300.0
+                    ],
+                    "prob": 1.0
+                },
+                {
+                    "fence": "deep_run",
+                    "scale_factor": "1.0",
+                    "identity_condition_win_range": [
+                        8.0,
+                        1000.0
+                    ],
+                    "prob": 1.0
+                }
+            ]
+        },
+        {
+            "bet_mode": "bonus",
+            "dresses": [
+                {
+                    "fence": "bonus",
+                    "scale_factor": "1.0",
+                    "identity_condition_win_range": [
+                        0.0,
+                        1000.0
+                    ],
+                    "prob": 1.0
+                }
+            ]
+        },
+        {
+            "bet_mode": "super_bonus",
+            "dresses": [
+                {
+                    "fence": "deep_run",
+                    "scale_factor": "1.0",
+                    "identity_condition_win_range": [
+                        0.0,
+                        3000.0
+                    ],
+                    "prob": 1.0
+                }
+            ]
+        }
+    ],
+    "bias": [
+        {
+            "bet_mode": "base",
+            "bias": [
+                {
+                    "criteria": "",
+                    "range": [
+                        0.0,
+                        0.0
+                    ],
+                    "prob": 0.0
+                }
+            ]
+        },
+        {
+            "bet_mode": "ante",
+            "bias": [
+                {
+                    "criteria": "",
+                    "range": [
+                        0.0,
+                        0.0
+                    ],
+                    "prob": 0.0
+                }
+            ]
+        },
+        {
+            "bet_mode": "bonus",
+            "bias": [
+                {
+                    "criteria": "",
+                    "range": [
+                        0.0,
+                        0.0
+                    ],
+                    "prob": 0.0
+                }
+            ]
+        },
+        {
+            "bet_mode": "super_bonus",
+            "bias": [
+                {
+                    "criteria": "",
+                    "range": [
+                        0.0,
+                        0.0
+                    ],
+                    "prob": 0.0
+                }
+            ]
+        }
+    ]
+}

@@ -1,0 +1,710 @@
+Exact Math SDK source pin verified: 6e0c69e3a4edc80ca7e59921e31167cb2ca83c59
+Exact stakeengine runtime pin verified: 0842bb244cb8c15e63af541054710a8082901e2f
+Sewer Surge SDK contract and optimizer input check passed.
+game_id=0_0_sewersurge; provider_name=KingWin; provider_number=0
+modes=base:1x, ante:3x, bonus:100x, super_bonus:500x
+Thread 0 finished with 14.885 RTP. [baseGame: 0.465, freeGame: 14.42]
+Thread 1 finished with 15.747 RTP. [baseGame: 0.462, freeGame: 15.285]
+Thread 2 finished with 18.839 RTP. [baseGame: 0.459, freeGame: 18.38]
+Thread 3 finished with 9.879 RTP. [baseGame: 0.467, freeGame: 9.412]
+Thread 4 finished with 14.87 RTP. [baseGame: 0.464, freeGame: 14.406]
+Thread 5 finished with 7.841 RTP. [baseGame: 0.461, freeGame: 7.379]
+Thread 6 finished with 10.881 RTP. [baseGame: 0.46, freeGame: 10.421]
+Thread 7 finished with 7.853 RTP. [baseGame: 0.464, freeGame: 7.389]
+Thread 8 finished with 10.871 RTP. [baseGame: 0.455, freeGame: 10.415]
+Thread 9 finished with 16.86 RTP. [baseGame: 0.447, freeGame: 16.413]
+Thread 0 finished with 5.269 RTP. [baseGame: 0.312, freeGame: 4.957]
+Thread 1 finished with 5.597 RTP. [baseGame: 0.305, freeGame: 5.292]
+Thread 2 finished with 6.607 RTP. [baseGame: 0.304, freeGame: 6.303]
+Thread 3 finished with 3.617 RTP. [baseGame: 0.312, freeGame: 3.305]
+Thread 4 finished with 5.284 RTP. [baseGame: 0.308, freeGame: 4.976]
+Thread 5 finished with 2.946 RTP. [baseGame: 0.3, freeGame: 2.646]
+Thread 6 finished with 3.966 RTP. [baseGame: 0.307, freeGame: 3.659]
+Thread 7 finished with 2.954 RTP. [baseGame: 0.31, freeGame: 2.645]
+Thread 8 finished with 3.953 RTP. [baseGame: 0.31, freeGame: 3.643]
+Thread 9 finished with 5.95 RTP. [baseGame: 0.305, freeGame: 5.645]
+Thread 0 finished with 1.212 RTP. [baseGame: 0.0, freeGame: 1.212]
+Thread 1 finished with 1.23 RTP. [baseGame: 0.0, freeGame: 1.23]
+Thread 3 finished with 1.157 RTP. [baseGame: 0.0, freeGame: 1.157]
+Thread 4 finished with 1.2 RTP. [baseGame: 0.0, freeGame: 1.2]
+Thread 5 finished with 1.136 RTP. [baseGame: 0.0, freeGame: 1.136]
+Thread 6 finished with 1.175 RTP. [baseGame: 0.0, freeGame: 1.175]
+Thread 7 finished with 1.138 RTP. [baseGame: 0.0, freeGame: 1.138]
+Thread 2 finished with 1.25 RTP. [baseGame: 0.0, freeGame: 1.25]
+Thread 8 finished with 1.156 RTP. [baseGame: 0.0, freeGame: 1.156]
+Thread 9 finished with 1.212 RTP. [baseGame: 0.0, freeGame: 1.212]
+Thread 0 finished with 0.993 RTP. [baseGame: 0.0, freeGame: 0.993]
+Thread 1 finished with 0.997 RTP. [baseGame: 0.0, freeGame: 0.997]
+Thread 2 finished with 1.014 RTP. [baseGame: 0.0, freeGame: 1.014]
+Thread 3 finished with 1.005 RTP. [baseGame: 0.0, freeGame: 1.005]
+Thread 4 finished with 1.004 RTP. [baseGame: 0.0, freeGame: 1.004]
+Thread 5 finished with 0.984 RTP. [baseGame: 0.0, freeGame: 0.984]
+Thread 6 finished with 1.005 RTP. [baseGame: 0.0, freeGame: 1.005]
+Thread 7 finished with 0.981 RTP. [baseGame: 0.0, freeGame: 0.981]
+Thread 8 finished with 1.004 RTP. [baseGame: 0.0, freeGame: 1.004]
+Thread 9 finished with 1.003 RTP. [baseGame: 0.0, freeGame: 1.003]
+
+Creating books...
+
+Creating books for 0_0_sewersurge in base
+Batch 1 of 1
+Started thread 0
+Started thread 1
+Started thread 2
+Started thread 3
+Started thread 4
+Started thread 5
+Started thread 6
+Started thread 7
+Started thread 8
+Started thread 9
+All threads are online.
+Finished joining threads.
+Saving books for  0_0_sewersurge in base
+Saving force files for 0_0_sewersurge in base
+Saving LUTs for 0_0_sewersurge in base
+Wrote verification file: C:\Users\User\Downloads\sewer-surge-current-source\math-sdk\games\0_0_sewersurge\library\configs\books_base.verification.json
+
+Finished creating books in 15.175374031066895 seconds.
+
+
+Creating books...
+
+Creating books for 0_0_sewersurge in ante
+Batch 1 of 1
+Started thread 0
+Started thread 1
+Started thread 2
+Started thread 3
+Started thread 4
+Started thread 5
+Started thread 6
+Started thread 7
+Started thread 8
+Started thread 9
+All threads are online.
+Finished joining threads.
+Saving books for  0_0_sewersurge in ante
+Saving force files for 0_0_sewersurge in ante
+Saving LUTs for 0_0_sewersurge in ante
+Wrote verification file: C:\Users\User\Downloads\sewer-surge-current-source\math-sdk\games\0_0_sewersurge\library\configs\books_ante.verification.json
+
+Finished creating books in 15.634772300720215 seconds.
+
+
+Creating books...
+
+Creating books for 0_0_sewersurge in bonus
+Batch 1 of 1
+Started thread 0
+Started thread 1
+Started thread 2
+Started thread 3
+Started thread 4
+Started thread 5
+Started thread 6
+Started thread 7
+Started thread 8
+Started thread 9
+All threads are online.
+Finished joining threads.
+Saving books for  0_0_sewersurge in bonus
+Saving force files for 0_0_sewersurge in bonus
+Saving LUTs for 0_0_sewersurge in bonus
+Wrote verification file: C:\Users\User\Downloads\sewer-surge-current-source\math-sdk\games\0_0_sewersurge\library\configs\books_bonus.verification.json
+
+Finished creating books in 13.233463287353516 seconds.
+
+
+Creating books...
+
+Creating books for 0_0_sewersurge in super_bonus
+Batch 1 of 1
+Started thread 0
+Started thread 1
+Started thread 2
+Started thread 3
+Started thread 4
+Started thread 5
+Started thread 6
+Started thread 7
+Started thread 8
+Started thread 9
+All threads are online.
+Finished joining threads.
+Saving books for  0_0_sewersurge in super_bonus
+Saving force files for 0_0_sewersurge in super_bonus
+Saving LUTs for 0_0_sewersurge in super_bonus
+Wrote verification file: C:\Users\User\Downloads\sewer-surge-current-source\math-sdk\games\0_0_sewersurge\library\configs\books_super_bonus.verification.json
+
+Finished creating books in 13.50124979019165 seconds.
+
+Running optimization for mode: base
+Running Simulations: 0_0_sewersurge - Mode: base
+../games/0_0_sewersurge\library\forces\force_record_base.json
+json force path: ../games/0_0_sewersurge\library\forces\force_record_base.json
+
+Creating wincap Fence
+
+
+Creating bonus Fence
+
+Creating Initial Random Distributions...
+Creating Initial Random Distributions...
+Creating Initial Random Distributions...
+Creating Initial Random Distributions...
+Creating Initial Random Distributions...
+Creating Initial Random Distributions...
+Creating Initial Random Distributions...
+Creating Initial Random Distributions...
+Creating Initial Random Distributions...
+Creating Initial Random Distributions...
+Combining Criteria Distributions....
+Combining Criteria Distributions....
+Combining Criteria Distributions....
+Combining Criteria Distributions....
+Combining Criteria Distributions....
+Combining Criteria Distributions....
+Combining Criteria Distributions....
+Combining Criteria Distributions....
+Combining Criteria Distributions....
+Combining Criteria Distributions....
+
+Creating deep_run Fence
+
+Creating Initial Random Distributions...
+Creating Initial Random Distributions...
+Creating Initial Random Distributions...
+Creating Initial Random Distributions...
+Creating Initial Random Distributions...
+Creating Initial Random Distributions...
+Creating Initial Random Distributions...
+Creating Initial Random Distributions...
+Creating Initial Random Distributions...
+Creating Initial Random Distributions...
+Combining Criteria Distributions....
+Combining Criteria Distributions....
+Combining Criteria Distributions....
+Combining Criteria Distributions....
+Combining Criteria Distributions....
+Combining Criteria Distributions....
+Combining Criteria Distributions....
+Combining Criteria Distributions....
+Combining Criteria Distributions....
+Combining Criteria Distributions....
+
+Creating 0 Fence
+
+
+Creating basegame Fence
+
+Creating Initial Random Distributions...
+Creating Initial Random Distributions...
+Creating Initial Random Distributions...
+Creating Initial Random Distributions...
+Creating Initial Random Distributions...
+Creating Initial Random Distributions...
+Creating Initial Random Distributions...
+Creating Initial Random Distributions...
+Creating Initial Random Distributions...
+Combining Criteria Distributions....
+Combining Criteria Distributions....
+Creating Initial Random Distributions...
+Combining Criteria Distributions....
+Combining Criteria Distributions....
+Combining Criteria Distributions....
+Combining Criteria Distributions....
+Combining Criteria Distributions....
+Combining Criteria Distributions....
+Combining Criteria Distributions....
+Combining Criteria Distributions....
+Creating Initial Distributions
+Creating Initial Distributions
+Creating Initial Distributions
+Creating Initial Distributions
+Creating Initial Distributions
+Creating Initial Distributions
+Creating Initial Distributions
+Creating Initial Distributions
+Creating Initial Distributions
+Creating Initial Distributions
+Thread 3: 50% done
+Thread 5: 50% done
+Thread 0: 50% done
+Thread 6: 50% done
+Thread 9: 50% done
+Thread 8: 50% done
+Thread 7: 50% done
+Thread 1: 50% done
+Thread 2: 50% done
+Thread 4: 50% done
+Thread 3: 100% done
+Thread 9: 100% done
+Thread 7: 100% done
+Thread 0: 100% done
+Thread 5: 100% done
+Thread 6: 100% done
+Thread 8: 100% done
+Thread 1: 100% done
+Thread 2: 100% done
+Thread 4: 100% done
+Printing info for Distribution 1
+Printing info for Distribution 6
+Printing info for Distribution 3
+Printing info for Distribution 8
+Printing info for Distribution 4
+Printing info for Distribution 2
+Printing info for Distribution 9
+Printing info for Distribution 10
+Printing info for Distribution 7
+Printing info for Distribution 5
+time taken 14ms
+
+Running optimization for mode: ante
+Running Simulations: 0_0_sewersurge - Mode: ante
+../games/0_0_sewersurge\library\forces\force_record_ante.json
+json force path: ../games/0_0_sewersurge\library\forces\force_record_ante.json
+
+Creating wincap Fence
+
+
+Creating bonus Fence
+
+Creating Initial Random Distributions...
+Creating Initial Random Distributions...
+Creating Initial Random Distributions...
+Creating Initial Random Distributions...
+Creating Initial Random Distributions...
+Creating Initial Random Distributions...
+Creating Initial Random Distributions...
+Creating Initial Random Distributions...
+Creating Initial Random Distributions...
+Creating Initial Random Distributions...
+Combining Criteria Distributions....
+Combining Criteria Distributions....
+Combining Criteria Distributions....
+Combining Criteria Distributions....
+Combining Criteria Distributions....
+Combining Criteria Distributions....
+Combining Criteria Distributions....
+Combining Criteria Distributions....
+Combining Criteria Distributions....
+Combining Criteria Distributions....
+
+Creating deep_run Fence
+
+Creating Initial Random Distributions...
+Creating Initial Random Distributions...
+Creating Initial Random Distributions...
+Creating Initial Random Distributions...
+Creating Initial Random Distributions...
+Creating Initial Random Distributions...
+Creating Initial Random Distributions...
+Creating Initial Random Distributions...
+Creating Initial Random Distributions...
+Creating Initial Random Distributions...
+Combining Criteria Distributions....
+Combining Criteria Distributions....
+Combining Criteria Distributions....
+Combining Criteria Distributions....
+Combining Criteria Distributions....
+Combining Criteria Distributions....
+Combining Criteria Distributions....
+Combining Criteria Distributions....
+Combining Criteria Distributions....
+Combining Criteria Distributions....
+
+Creating 0 Fence
+
+
+Creating basegame Fence
+
+Creating Initial Random Distributions...
+Creating Initial Random Distributions...
+Creating Initial Random Distributions...
+Creating Initial Random Distributions...
+Creating Initial Random Distributions...
+Creating Initial Random Distributions...
+Creating Initial Random Distributions...
+Creating Initial Random Distributions...
+Creating Initial Random Distributions...
+Combining Criteria Distributions....
+Combining Criteria Distributions....
+Combining Criteria Distributions....
+Creating Initial Random Distributions...
+Combining Criteria Distributions....
+Combining Criteria Distributions....
+Combining Criteria Distributions....
+Combining Criteria Distributions....
+Combining Criteria Distributions....
+Combining Criteria Distributions....
+Combining Criteria Distributions....
+Creating Initial Distributions
+Creating Initial Distributions
+Creating Initial Distributions
+Creating Initial Distributions
+Creating Initial Distributions
+Creating Initial Distributions
+Creating Initial Distributions
+Creating Initial Distributions
+Creating Initial Distributions
+Creating Initial Distributions
+Thread 7: 50% done
+Thread 9: 50% done
+Thread 0: 50% done
+Thread 1: 50% done
+Thread 5: 50% done
+Thread 3: 50% done
+Thread 4: 50% done
+Thread 8: 50% done
+Thread 6: 50% done
+Thread 2: 50% done
+Thread 9: 100% done
+Thread 0: 100% done
+Thread 1: 100% done
+Thread 7: 100% done
+Thread 3: 100% done
+Thread 4: 100% done
+Thread 8: 100% done
+Thread 5: 100% done
+Thread 6: 100% done
+Thread 2: 100% done
+Printing info for Distribution 6
+Printing info for Distribution 1
+Printing info for Distribution 3
+Printing info for Distribution 4
+Printing info for Distribution 9
+Printing info for Distribution 5
+Printing info for Distribution 2
+Printing info for Distribution 8
+Printing info for Distribution 7
+Printing info for Distribution 10
+time taken 9ms
+
+Running optimization for mode: bonus
+Running Simulations: 0_0_sewersurge - Mode: bonus
+../games/0_0_sewersurge\library\forces\force_record_bonus.json
+json force path: ../games/0_0_sewersurge\library\forces\force_record_bonus.json
+
+Creating wincap Fence
+
+
+Creating bonus Fence
+
+Creating Initial Random Distributions...
+Creating Initial Random Distributions...
+Creating Initial Random Distributions...
+Creating Initial Random Distributions...
+Creating Initial Random Distributions...
+Creating Initial Random Distributions...
+Creating Initial Random Distributions...
+Creating Initial Random Distributions...
+Creating Initial Random Distributions...
+Creating Initial Random Distributions...
+Combining Criteria Distributions....
+Combining Criteria Distributions....
+Combining Criteria Distributions....
+Combining Criteria Distributions....
+Combining Criteria Distributions....
+Combining Criteria Distributions....
+Combining Criteria Distributions....
+Combining Criteria Distributions....
+Combining Criteria Distributions....
+Combining Criteria Distributions....
+Creating Initial Distributions
+Creating Initial Distributions
+Creating Initial Distributions
+Creating Initial Distributions
+Creating Initial Distributions
+Creating Initial Distributions
+Creating Initial Distributions
+Creating Initial Distributions
+Creating Initial Distributions
+Creating Initial Distributions
+Thread 3: 50% done
+Thread 2: 50% done
+Thread 7: 50% done
+Thread 8: 50% done
+Thread 1: 50% done
+Thread 4: 50% done
+Thread 6: 50% done
+Thread 0: 50% done
+Thread 9: 50% done
+Thread 5: 50% done
+Thread 7: 100% done
+Thread 4: 100% done
+Thread 6: 100% done
+Thread 1: 100% done
+Thread 0: 100% done
+Thread 3: 100% done
+Thread 2: 100% done
+Thread 8: 100% done
+Thread 5: 100% done
+Thread 9: 100% done
+Printing info for Distribution 1
+Printing info for Distribution 5
+Printing info for Distribution 3
+Printing info for Distribution 9
+Printing info for Distribution 8
+Printing info for Distribution 6
+Printing info for Distribution 2
+Printing info for Distribution 10
+Printing info for Distribution 4
+Printing info for Distribution 7
+time taken 10ms
+
+Running optimization for mode: super_bonus
+Running Simulations: 0_0_sewersurge - Mode: super_bonus
+../games/0_0_sewersurge\library\forces\force_record_super_bonus.json
+json force path: ../games/0_0_sewersurge\library\forces\force_record_super_bonus.json
+
+Creating wincap Fence
+
+
+Creating deep_run Fence
+
+Creating Initial Random Distributions...
+Creating Initial Random Distributions...
+Creating Initial Random Distributions...
+Creating Initial Random Distributions...
+Creating Initial Random Distributions...
+Creating Initial Random Distributions...
+Creating Initial Random Distributions...
+Creating Initial Random Distributions...
+Creating Initial Random Distributions...
+Creating Initial Random Distributions...
+Combining Criteria Distributions....
+Combining Criteria Distributions....
+Combining Criteria Distributions....
+Combining Criteria Distributions....
+Combining Criteria Distributions....
+Combining Criteria Distributions....
+Combining Criteria Distributions....
+Combining Criteria Distributions....
+Combining Criteria Distributions....
+Combining Criteria Distributions....
+Creating Initial Distributions
+Creating Initial Distributions
+Creating Initial Distributions
+Creating Initial Distributions
+Creating Initial Distributions
+Creating Initial Distributions
+Creating Initial Distributions
+Creating Initial Distributions
+Creating Initial Distributions
+Creating Initial Distributions
+Thread 5: 50% done
+Thread 4: 50% done
+Thread 1: 50% done
+Thread 7: 50% done
+Thread 0: 50% done
+Thread 8: 50% done
+Thread 2: 50% done
+Thread 9: 50% done
+Thread 3: 50% done
+Thread 6: 50% done
+Thread 1: 100% done
+Thread 4: 100% done
+Thread 2: 100% done
+Thread 0: 100% done
+Thread 7: 100% done
+Thread 5: 100% done
+Thread 3: 100% done
+Thread 9: 100% done
+Thread 8: 100% done
+Thread 6: 100% done
+Printing info for Distribution 1
+Printing info for Distribution 6
+Printing info for Distribution 10
+Printing info for Distribution 7
+Printing info for Distribution 5
+Printing info for Distribution 3
+Printing info for Distribution 2
+Printing info for Distribution 9
+Printing info for Distribution 8
+Printing info for Distribution 4
+time taken 10ms
+
+[FAST PATH] Using verification sidecar for base
+[FAST PATH] base: SHA-256 OK, payout hash OK, entries=100000
+[FAST PATH] Using verification sidecar for ante
+[FAST PATH] ante: SHA-256 OK, payout hash OK, entries=100000
+[FAST PATH] Using verification sidecar for bonus
+[FAST PATH] bonus: SHA-256 OK, payout hash OK, entries=100000
+[FAST PATH] Using verification sidecar for super_bonus
+[FAST PATH] super_bonus: SHA-256 OK, payout hash OK, entries=100000
+{
+  "classification": "optimized math/LUT audit passed",
+  "optimized_math_audit_pass": true,
+  "math_sdk": "local extracted SDK workspace snapshot; clean exact-pin runtime test still required",
+  "target_rtp_percent": 96.5,
+  "rtp_tolerance_percentage_points": 0.5,
+  "ante_base_feature_frequency_ratio": 4.999995264566063,
+  "ante_base_feature_frequency_ratio_target": 5.0,
+  "ante_base_feature_frequency_ratio_tolerance_relative": 0.1,
+  "ante_base_feature_frequency_ratio_pass": true,
+  "books_per_mode": {
+    "base": 100000,
+    "ante": 100000,
+    "bonus": 100000,
+    "super_bonus": 100000
+  },
+  "total_books": 400000,
+  "structural_and_lut_failures": 0,
+  "modes_missing_optimized_lut": [],
+  "optimized_lut_rtp_out_of_tolerance": [],
+  "index_mismatches": [],
+  "modes": [
+    {
+      "mode": "base",
+      "cost_multiplier": 1.0,
+      "book_source": "C:\\Users\\User\\Downloads\\sewer-surge-current-source\\math-sdk\\games\\0_0_sewersurge\\library\\publish_files\\books_base.jsonl.zst",
+      "books": 100000,
+      "scatter_tiers": {
+        "none": 79900,
+        "bonus": 10000,
+        "deep-run": 10100
+      },
+      "books_with_connected_branchable_route": 100000,
+      "max_payout_x": 10000.0,
+      "wincap_books": 100,
+      "nonzero_payout_books": 65000,
+      "unique_payout_multipliers": 21,
+      "raw_unoptimized_rtp_percent": 1285.2383,
+      "lookup_table": {
+        "status": "optimized",
+        "path": "C:\\Users\\User\\Downloads\\sewer-surge-current-source\\math-sdk\\games\\0_0_sewersurge\\library\\publish_files\\lookUpTable_base_0.csv",
+        "rows": 100000,
+        "total_weight": 1125899906792267.0,
+        "weighted_rtp_percent": 96.5,
+        "hit_rate_percent": 45.467797,
+        "bonus_rate_percent": 2.80112,
+        "deep_run_rate_percent": 1.00001,
+        "feature_rate_percent": 3.80113,
+        "max_win_weighted_probability_percent": 1e-05,
+        "max_win_expected_frequency_in_rounds": 10000008.054,
+        "max_win_within_typical_1_in_10m_guideline": false,
+        "statistical_warnings": [
+          "10,000x outcome is rarer than the typical 1-in-10,000,000 guideline"
+        ],
+        "target_rtp_percent": 96.5,
+        "target_tolerance_percentage_points": 0.5,
+        "rtp_within_tolerance": true,
+        "errors": []
+      },
+      "index_mismatch": [],
+      "structural_failures": []
+    },
+    {
+      "mode": "ante",
+      "cost_multiplier": 3.0,
+      "book_source": "C:\\Users\\User\\Downloads\\sewer-surge-current-source\\math-sdk\\games\\0_0_sewersurge\\library\\publish_files\\books_ante.jsonl.zst",
+      "books": 100000,
+      "scatter_tiers": {
+        "none": 59900,
+        "bonus": 20000,
+        "deep-run": 20100
+      },
+      "books_with_connected_branchable_route": 100000,
+      "max_payout_x": 10000.0,
+      "wincap_books": 100,
+      "nonzero_payout_books": 70100,
+      "unique_payout_multipliers": 21,
+      "raw_unoptimized_rtp_percent": 461.4309,
+      "lookup_table": {
+        "status": "optimized",
+        "path": "C:\\Users\\User\\Downloads\\sewer-surge-current-source\\math-sdk\\games\\0_0_sewersurge\\library\\publish_files\\lookUpTable_ante_0.csv",
+        "rows": 100000,
+        "total_weight": 1125899906785864.0,
+        "weighted_rtp_percent": 96.5,
+        "hit_rate_percent": 60.672299,
+        "bonus_rate_percent": 14.005602,
+        "deep_run_rate_percent": 5.00003,
+        "feature_rate_percent": 19.005632,
+        "max_win_weighted_probability_percent": 3e-05,
+        "max_win_expected_frequency_in_rounds": 3333334.044,
+        "max_win_within_typical_1_in_10m_guideline": true,
+        "statistical_warnings": [],
+        "target_rtp_percent": 96.5,
+        "target_tolerance_percentage_points": 0.5,
+        "rtp_within_tolerance": true,
+        "errors": []
+      },
+      "index_mismatch": [],
+      "structural_failures": []
+    },
+    {
+      "mode": "bonus",
+      "cost_multiplier": 100.0,
+      "book_source": "C:\\Users\\User\\Downloads\\sewer-surge-current-source\\math-sdk\\games\\0_0_sewersurge\\library\\publish_files\\books_bonus.jsonl.zst",
+      "books": 100000,
+      "scatter_tiers": {
+        "bonus": 100000
+      },
+      "books_with_connected_branchable_route": 100000,
+      "max_payout_x": 10000.0,
+      "wincap_books": 100,
+      "nonzero_payout_books": 96230,
+      "unique_payout_multipliers": 13,
+      "raw_unoptimized_rtp_percent": 118.6645,
+      "lookup_table": {
+        "status": "optimized",
+        "path": "C:\\Users\\User\\Downloads\\sewer-surge-current-source\\math-sdk\\games\\0_0_sewersurge\\library\\publish_files\\lookUpTable_bonus_0.csv",
+        "rows": 100000,
+        "total_weight": 1125899906780467.0,
+        "weighted_rtp_percent": 96.5,
+        "hit_rate_percent": 81.135607,
+        "bonus_rate_percent": 100.0,
+        "deep_run_rate_percent": 0.0,
+        "feature_rate_percent": 100.0,
+        "max_win_weighted_probability_percent": 0.001,
+        "max_win_expected_frequency_in_rounds": 100000.001,
+        "max_win_within_typical_1_in_10m_guideline": true,
+        "statistical_warnings": [],
+        "target_rtp_percent": 96.5,
+        "target_tolerance_percentage_points": 0.5,
+        "rtp_within_tolerance": true,
+        "errors": []
+      },
+      "index_mismatch": [],
+      "structural_failures": []
+    },
+    {
+      "mode": "super_bonus",
+      "cost_multiplier": 500.0,
+      "book_source": "C:\\Users\\User\\Downloads\\sewer-surge-current-source\\math-sdk\\games\\0_0_sewersurge\\library\\publish_files\\books_super_bonus.jsonl.zst",
+      "books": 100000,
+      "scatter_tiers": {
+        "deep-run": 100000
+      },
+      "books_with_connected_branchable_route": 100000,
+      "max_payout_x": 10000.0,
+      "wincap_books": 100,
+      "nonzero_payout_books": 96766,
+      "unique_payout_multipliers": 13,
+      "raw_unoptimized_rtp_percent": 99.9115,
+      "lookup_table": {
+        "status": "optimized",
+        "path": "C:\\Users\\User\\Downloads\\sewer-surge-current-source\\math-sdk\\games\\0_0_sewersurge\\library\\publish_files\\lookUpTable_super_bonus_0.csv",
+        "rows": 100000,
+        "total_weight": 1125899906778389.0,
+        "weighted_rtp_percent": 96.5,
+        "hit_rate_percent": 95.051311,
+        "bonus_rate_percent": 0.0,
+        "deep_run_rate_percent": 100.0,
+        "feature_rate_percent": 100.0,
+        "max_win_weighted_probability_percent": 0.005,
+        "max_win_expected_frequency_in_rounds": 20000.0,
+        "max_win_within_typical_1_in_10m_guideline": true,
+        "statistical_warnings": [],
+        "target_rtp_percent": 96.5,
+        "target_tolerance_percentage_points": 0.5,
+        "rtp_within_tolerance": true,
+        "errors": []
+      },
+      "index_mismatch": [],
+      "structural_failures": []
+    }
+  ]
+}
+Production workflow and weighted-LUT audit completed. Review C:\Users\User\Downloads\sewer-surge-current-source\math-sdk\games\0_0_sewersurge\library\audit-summary.json before upload.

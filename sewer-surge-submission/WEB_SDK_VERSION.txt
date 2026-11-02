@@ -1,0 +1,12 @@
+Web SDK repository: https://github.com/engineio/web-sdk
+Target integration: apps/sewer-surge
+
+This app is built in the checked-out Web SDK workspace at
+C:\Users\User\Downloads\web-sdk\apps\sewer-surge. That workspace has no Git
+metadata, so its upstream commit is not recorded. The app retains the SDK
+authentication/betting flow in production. `pnpm build` completed successfully
+with the SvelteKit static adapter; live RGS verification is still pending.
+
+Frontend update: grayscale KingWin chess mark and animated loader included in staged build.
+
+Frontend follow-up: v5 50,000× award-cap validation and bet-mode metadata alignment included in the latest staged build.

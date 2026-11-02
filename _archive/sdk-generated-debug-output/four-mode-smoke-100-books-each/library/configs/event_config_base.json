@@ -1,0 +1,282 @@
+{
+    "reveal": {
+        "type": "reveal",
+        "board": [
+            [
+                {
+                    "name": "W",
+                    "wild": true
+                },
+                {
+                    "name": "T"
+                },
+                {
+                    "name": "W",
+                    "wild": true
+                },
+                {
+                    "name": "I"
+                },
+                {
+                    "name": "L"
+                }
+            ],
+            [
+                {
+                    "name": "T"
+                },
+                {
+                    "name": "X"
+                },
+                {
+                    "name": "T"
+                },
+                {
+                    "name": "T"
+                },
+                {
+                    "name": "I"
+                }
+            ],
+            [
+                {
+                    "name": "I"
+                },
+                {
+                    "name": "X"
+                },
+                {
+                    "name": "T"
+                },
+                {
+                    "name": "X"
+                },
+                {
+                    "name": "I"
+                }
+            ],
+            [
+                {
+                    "name": "X"
+                },
+                {
+                    "name": "L"
+                },
+                {
+                    "name": "L"
+                },
+                {
+                    "name": "I"
+                },
+                {
+                    "name": "T"
+                }
+            ],
+            [
+                {
+                    "name": "X"
+                },
+                {
+                    "name": "I"
+                },
+                {
+                    "name": "X"
+                },
+                {
+                    "name": "I"
+                },
+                {
+                    "name": "T"
+                }
+            ]
+        ],
+        "paddingPositions": [
+            17,
+            2,
+            8,
+            10,
+            63
+        ],
+        "gameType": "basegame",
+        "anticipation": [
+            0,
+            0,
+            0,
+            0,
+            0
+        ]
+    },
+    "sewerBoard": {
+        "type": "sewerBoard",
+        "board": [
+            [
+                {
+                    "t": "W",
+                    "r": 0,
+                    "s": false
+                },
+                {
+                    "t": "T",
+                    "r": 0,
+                    "s": false
+                },
+                {
+                    "t": "I",
+                    "r": 1,
+                    "s": false
+                },
+                {
+                    "t": "X",
+                    "r": 0,
+                    "s": false
+                },
+                {
+                    "t": "X",
+                    "r": 2,
+                    "s": false
+                }
+            ],
+            [
+                {
+                    "t": "T",
+                    "r": 0,
+                    "s": false
+                },
+                {
+                    "t": "X",
+                    "r": 0,
+                    "s": false
+                },
+                {
+                    "t": "X",
+                    "r": 0,
+                    "s": false
+                },
+                {
+                    "t": "L",
+                    "r": 0,
+                    "s": false
+                },
+                {
+                    "t": "I",
+                    "r": 0,
+                    "s": false
+                }
+            ],
+            [
+                {
+                    "t": "W",
+                    "r": 0,
+                    "s": false
+                },
+                {
+                    "t": "T",
+                    "r": 0,
+                    "s": false
+                },
+                {
+                    "t": "T",
+                    "r": 1,
+                    "s": false
+                },
+                {
+                    "t": "L",
+                    "r": 2,
+                    "s": false
+                },
+                {
+                    "t": "X",
+                    "r": 3,
+                    "s": false
+                }
+            ],
+            [
+                {
+                    "t": "I",
+                    "r": 1,
+                    "s": false
+                },
+                {
+                    "t": "T",
+                    "r": 2,
+                    "s": false
+                },
+                {
+                    "t": "X",
+                    "r": 3,
+                    "s": false
+                },
+                {
+                    "t": "I",
+                    "r": 0,
+                    "s": false
+                },
+                {
+                    "t": "I",
+                    "r": 1,
+                    "s": false
+                }
+            ],
+            [
+                {
+                    "t": "L",
+                    "r": 0,
+                    "s": false
+                },
+                {
+                    "t": "I",
+                    "r": 3,
+                    "s": false
+                },
+                {
+                    "t": "I",
+                    "r": 3,
+                    "s": false
+                },
+                {
+                    "t": "T",
+                    "r": 0,
+                    "s": false
+                },
+                {
+                    "t": "T",
+                    "r": 1,
+                    "s": false
+                }
+            ]
+        ],
+        "inlet": 0,
+        "scatterCount": 0,
+        "scatterTier": "none",
+        "waterEntry": "west",
+        "waterExit": "east",
+        "routeAuthority": "visual-only",
+        "schemaVersion": 1
+    },
+    "sewerAward": {
+        "type": "sewerAward",
+        "amount": 0,
+        "payoutMultiplier": 0,
+        "scatterTier": "none",
+        "maxWinCapped": false
+    },
+    "setWin": {
+        "type": "setWin",
+        "amount": 0,
+        "winLevel": 1
+    },
+    "setTotalWin": {
+        "type": "setTotalWin",
+        "amount": 0
+    },
+    "finalWin": {
+        "type": "finalWin",
+        "amount": 0
+    },
+    "sewerFeature": {
+        "type": "sewerFeature",
+        "feature": "bonus",
+        "scatterCount": 3,
+        "routeAuthority": "visual-only"
+    }
+}

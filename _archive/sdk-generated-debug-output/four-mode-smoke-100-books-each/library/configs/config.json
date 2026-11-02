@@ -1,0 +1,118 @@
+{
+    "workingName": "Sewer Surge",
+    "frontendConfig": {
+        "file": "fe_config.json",
+        "sha256": "211445119dfe6a61435b49701e92e023eb06422e8b56ce7dbb3b52eb960f5e99"
+    },
+    "gameID": "0_0_sewersurge",
+    "rtp": 96.5,
+    "betDenomination": 1000,
+    "minDenomination": 10,
+    "providerNumber": 0,
+    "standardForceFile": {
+        "file": "force.json",
+        "sha256": "7bc968440931507109e9cee7ce0d222fbb29a482a2e03bde8beeb73c885f6611"
+    },
+    "bookShelfConfig": [
+        {
+            "name": "base",
+            "tables": [
+                {
+                    "file": "lookUpTable_base_0.csv",
+                    "sha256": "53a3c4b3651b808e7652ca075f84829c98de32bbb81cbc6c703d39e95bcf9bd5"
+                }
+            ],
+            "cost": 1.0,
+            "rtp": 0.965,
+            "std": 994.7,
+            "bookLength": 100,
+            "feature": true,
+            "autoEndRoundDisabled": false,
+            "buyBonus": false,
+            "maxWin": 10000.0,
+            "booksFile": {
+                "file": "books_base.jsonl.zst",
+                "sha256": "06625bc0345acd08d6c1f350372b481062a842d6734e95c505d401a633b513c7"
+            },
+            "forceFile": {
+                "file": "force_record_base.json",
+                "sha256": "adb05046c75a5aff926e279deabba2b4f16078ed632123d5721f1b0104aa4794"
+            }
+        },
+        {
+            "name": "ante",
+            "tables": [
+                {
+                    "file": "lookUpTable_ante_0.csv",
+                    "sha256": "ac6e801d5a7b56cab469b246ca06d85054a209123a369a85f23e175974f282ff"
+                }
+            ],
+            "cost": 3.0,
+            "rtp": 0.965,
+            "std": 331.53,
+            "bookLength": 100,
+            "feature": true,
+            "autoEndRoundDisabled": false,
+            "buyBonus": false,
+            "maxWin": 10000.0,
+            "booksFile": {
+                "file": "books_ante.jsonl.zst",
+                "sha256": "566ee7bd9c513f4d4a5d26c0fbea32ac8ea8d21c4ad0daee1ffa3a2062f56c73"
+            },
+            "forceFile": {
+                "file": "force_record_ante.json",
+                "sha256": "0aaadf28fc91faaf4a2d89f2b9fbac69fbc9f9ce9bcaf69786347fec234ac97a"
+            }
+        },
+        {
+            "name": "bonus",
+            "tables": [
+                {
+                    "file": "lookUpTable_bonus_0.csv",
+                    "sha256": "f26404f14766d8681ec4b8f02477c838d840faa0269436311d24762e669d0b96"
+                }
+            ],
+            "cost": 100.0,
+            "rtp": 0.965,
+            "std": 9.91,
+            "bookLength": 100,
+            "feature": false,
+            "autoEndRoundDisabled": false,
+            "buyBonus": true,
+            "maxWin": 10000.0,
+            "booksFile": {
+                "file": "books_bonus.jsonl.zst",
+                "sha256": "de0a77a3ab6e02e99a4a7801974a2130f00c6471b0f59ca60b3b4ff02e390df6"
+            },
+            "forceFile": {
+                "file": "force_record_bonus.json",
+                "sha256": "fcc559a890f9a0add213b373ced1db559f3877c436475b33ec8911b2045d0dfe"
+            }
+        },
+        {
+            "name": "super_bonus",
+            "tables": [
+                {
+                    "file": "lookUpTable_super_bonus_0.csv",
+                    "sha256": "21c40912ae668f0675e075f02a7aae5cad2684304598d894fad7c4411dd32b49"
+                }
+            ],
+            "cost": 500.0,
+            "rtp": 0.965,
+            "std": 2.07,
+            "bookLength": 100,
+            "feature": false,
+            "autoEndRoundDisabled": false,
+            "buyBonus": true,
+            "maxWin": 10000.0,
+            "booksFile": {
+                "file": "books_super_bonus.jsonl.zst",
+                "sha256": "ab230a9135556ed460de0f4c32503a30a61dd04425487b2f22bf8c862fb3eb80"
+            },
+            "forceFile": {
+                "file": "force_record_super_bonus.json",
+                "sha256": "3fe2844ebe0bca24526a18be18a27bc87d238e183eca534dd099330544fb2ddb"
+            }
+        }
+    ]
+}

@@ -1,0 +1,118 @@
+{
+    "workingName": "Sewer Surge",
+    "frontendConfig": {
+        "file": "fe_config.json",
+        "sha256": "9a4971bec9016eecd66570fb6f7c6b7fdaff37f56d78df0365d0f7f5d9905d4f"
+    },
+    "gameID": "0_0_sewersurge",
+    "rtp": 96.5,
+    "betDenomination": 1000,
+    "minDenomination": 10,
+    "providerNumber": 0,
+    "standardForceFile": {
+        "file": "force.json",
+        "sha256": "727fb921843a48c7fc05532b773c76e75f0d0cdc23694353f96e545e048e16d4"
+    },
+    "bookShelfConfig": [
+        {
+            "name": "base",
+            "tables": [
+                {
+                    "file": "lookUpTable_base_0.csv",
+                    "sha256": "d192c97a20cbd5cbd7fcbf4b67be2112f6ef51783c7b5c47e70b8c4446b7d6de"
+                }
+            ],
+            "cost": 1.0,
+            "rtp": 0.965,
+            "std": 17.85,
+            "bookLength": 100000,
+            "feature": true,
+            "autoEndRoundDisabled": false,
+            "buyBonus": false,
+            "maxWin": 50000.0,
+            "booksFile": {
+                "file": "books_base.jsonl.zst",
+                "sha256": "dca8cbb82257c9dfd49fce38c4525c2aae853953fe3b140473afdf8018cfb0b2"
+            },
+            "forceFile": {
+                "file": "force_record_base.json",
+                "sha256": "85e6dd2991e1377516ecc7c7a503efc9a42381703c535ab337050a4b784709dd"
+            }
+        },
+        {
+            "name": "ante",
+            "tables": [
+                {
+                    "file": "lookUpTable_ante_0.csv",
+                    "sha256": "617c1de5754a8008737ec11b6efbc3502d7a2a1345be8ce61eb9972cf7db2e8d"
+                }
+            ],
+            "cost": 3.0,
+            "rtp": 0.965,
+            "std": 10.18,
+            "bookLength": 100000,
+            "feature": true,
+            "autoEndRoundDisabled": false,
+            "buyBonus": false,
+            "maxWin": 50000.0,
+            "booksFile": {
+                "file": "books_ante.jsonl.zst",
+                "sha256": "276517b4d813991d9fc2f399bef2df395c51d85c1b48ee36f364fcf5f3f4f3b5"
+            },
+            "forceFile": {
+                "file": "force_record_ante.json",
+                "sha256": "beb2a2d1310de309c4860f491b41abcce703e79d729ae93545c4f1108572deae"
+            }
+        },
+        {
+            "name": "bonus",
+            "tables": [
+                {
+                    "file": "lookUpTable_bonus_0.csv",
+                    "sha256": "e8f1da5dd08753cdf037015d67f82aa65a39fbdddd53c63c71d7b71897baf0f2"
+                }
+            ],
+            "cost": 100.0,
+            "rtp": 0.965,
+            "std": 1.27,
+            "bookLength": 100000,
+            "feature": false,
+            "autoEndRoundDisabled": false,
+            "buyBonus": true,
+            "maxWin": 50000.0,
+            "booksFile": {
+                "file": "books_bonus.jsonl.zst",
+                "sha256": "3e3f8e571efaac3a0de83c0d4ec56f0cb7d9885cc8789c5aee3f55b3168bd06b"
+            },
+            "forceFile": {
+                "file": "force_record_bonus.json",
+                "sha256": "20a7d32e9d2caf85b2f3edaaed0ef85de760a63f3c4150a4dbf063384ed04284"
+            }
+        },
+        {
+            "name": "super_bonus",
+            "tables": [
+                {
+                    "file": "lookUpTable_super_bonus_0.csv",
+                    "sha256": "33d26d4679d085519df17a1dc69dd712b6643ccf96646ce0a5862df4f1ecce95"
+                }
+            ],
+            "cost": 500.0,
+            "rtp": 0.965,
+            "std": 1.55,
+            "bookLength": 100000,
+            "feature": false,
+            "autoEndRoundDisabled": false,
+            "buyBonus": true,
+            "maxWin": 50000.0,
+            "booksFile": {
+                "file": "books_super_bonus.jsonl.zst",
+                "sha256": "cdcee05a55207348fdd374816f4a1b8070d29601d5d70103574b6c186c4302db"
+            },
+            "forceFile": {
+                "file": "force_record_super_bonus.json",
+                "sha256": "3baedb4d4bdb74c3db73ff7842cc99486b9882cdf2dffa3da0181c39010ea77c"
+            }
+        }
+    ]
+}

@@ -1,0 +1,1585 @@
+{
+  "project": "Sewer Surge",
+  "manifest_version": 1,
+  "math_sdk_source_target": "engineio/math-sdk@6e0c69e3a4edc80ca7e59921e31167cb2ca83c59",
+  "stakeengine_runtime_target": "StakeEngine/math-sdk@0842bb244cb8c15e63af541054710a8082901e2f",
+  "web_sdk_upstream_commit": "unverified; see WEB_SDK_VERSION.txt",
+  "included_file_count": 315,
+  "files": [
+    {
+      "path": "README.md",
+      "size_bytes": 5507,
+      "sha256": "6e5dd1ffef78fa0d3d87f6371717a311e37abd2f1fd7ca3792bb9cbe39b21a11"
+    },
+    {
+      "path": "SDK_VERSION.txt",
+      "size_bytes": 629,
+      "sha256": "1a9cbc24f7d03499a008a208f6a57af7c8d6ec19574bbcef283cacaeb41e1e74"
+    },
+    {
+      "path": "WEB_SDK_VERSION.txt",
+      "size_bytes": 577,
+      "sha256": "e3e55519850c95bb338fa65bea7e8fb030110eb6ce217b524e834058a4f8c301"
+    },
+    {
+      "path": "frontend/.gitignore",
+      "size_bytes": 44,
+      "sha256": "19b2f3ca8e73bee02fd94a75abc0b202c338d132816a4cf848f1053b4a8b2888"
+    },
+    {
+      "path": "frontend/README.md",
+      "size_bytes": 1660,
+      "sha256": "82e3261ce01146f689941a6b04218cf2001d41e5da577220ec82a15c5d4b5ea0"
+    },
+    {
+      "path": "frontend/index.html",
+      "size_bytes": 424,
+      "sha256": "df742bc505685b4c6e174fe09f569245b675daad53b7a82431bf7a70d9d4aa15"
+    },
+    {
+      "path": "frontend/package-lock.json",
+      "size_bytes": 47567,
+      "sha256": "3be1c20176010df8d422736b4ba48843aa6cb6e47e0e68a20b37c9c5a817a554"
+    },
+    {
+      "path": "frontend/package.json",
+      "size_bytes": 459,
+      "sha256": "118ab94fba983940b3bd0947e3eb2cb11f71b3c6d944a04485601c5691cffdf7"
+    },
+    {
+      "path": "frontend/scripts/prepare-upload.mjs",
+      "size_bytes": 4934,
+      "sha256": "dbbbf2a5e540c67ab70590361ab37835b7ed0c43a8b9f34e31087173a9a5d4ea"
+    },
+    {
+      "path": "frontend/src/App.svelte",
+      "size_bytes": 16407,
+      "sha256": "957ba18d282436d1d5ecdbd959be22add3e5416f92d635e4255ce292cdeaa89d"
+    },
+    {
+      "path": "frontend/src/SewerSurgeBoard.svelte",
+      "size_bytes": 7815,
+      "sha256": "e64ea749f0b3cb7a9852a28cf99e50c6e0c03ef22e039305379347b6c86780ba"
+    },
+    {
+      "path": "frontend/src/app.css",
+      "size_bytes": 25611,
+      "sha256": "463db0b163087e9c1bcd47929fd4adca84be1d036f737edef2eac1193fce1258"
+    },
+    {
+      "path": "frontend/src/demoRounds.js",
+      "size_bytes": 2329,
+      "sha256": "2b5723b8a48b6f318f97ebf8cdfbd6d79c91f07ee3d8ba50ebe78b4a9e3a0ec7"
+    },
+    {
+      "path": "frontend/src/main.js",
+      "size_bytes": 150,
+      "sha256": "2de2916cdc85c76ce28325120c37ec3bcc0a2ec68fc36e87360583a156b318ec"
+    },
+    {
+      "path": "frontend/src/rgsAdapter.js",
+      "size_bytes": 2854,
+      "sha256": "62e8671d79df8db47ae9101e5d15f780c79637a7a7f9abdb1ca86b660a035155"
+    },
+    {
+      "path": "frontend/src/rgsAdapter.test.js",
+      "size_bytes": 1879,
+      "sha256": "e0afd2405f059395246cf884a20d91a4f2228ebb9eae0626bc20c89d4bf10941"
+    },
+    {
+      "path": "frontend/src/sewerGame.js",
+      "size_bytes": 8891,
+      "sha256": "f49d510e3a73d14ba11054a7aae30d1a23749d5822ebfd777709c1ca93a1809f"
+    },
+    {
+      "path": "frontend/src/sewerGame.test.js",
+      "size_bytes": 3673,
+      "sha256": "4100f40305ff726028ddfa62ff5b9576f8aa4a98290fd025081e6fe0253580de"
+    },
+    {
+      "path": "frontend/upload/README.md",
+      "size_bytes": 829,
+      "sha256": "091c2aeb9d549d8115130805f234a374c17b06147c3b02494611a99f61839654"
+    },
+    {
+      "path": "frontend/vite.config.js",
+      "size_bytes": 273,
+      "sha256": "dc589b6020326af25f320c1f00f2d252e99645036ed7cb9ee0dbe2a8f91fd97e"
+    },
+    {
+      "path": "math-sdk-drop-in/SDK_VERSION.txt",
+      "size_bytes": 605,
+      "sha256": "9abfd6cd26f2a6a77d1be74d3106e50a46c3ef3ac60427406ae672488b3a1d7f"
+    },
+    {
+      "path": "math-sdk-drop-in/games/0_0_sewersurge/SDK_PIN.txt",
+      "size_bytes": 134,
+      "sha256": "b54c7b7bfbe9e188fce8a722b128271b3b9919690e3f8160167c5c034dd523ed"
+    },
+    {
+      "path": "math-sdk-drop-in/games/0_0_sewersurge/game_calculations.py",
+      "size_bytes": 289,
+      "sha256": "04e5a31e4f195aa7f20b1746aacd45d05ddcd44b7ac96ac52f2c2a303c9f7438"
+    },
+    {
+      "path": "math-sdk-drop-in/games/0_0_sewersurge/game_config.py",
+      "size_bytes": 7975,
+      "sha256": "cf051111fa0adc15dd56b9a0207e96e22eb141d9b192661c6c0d4c002c9bf6fd"
+    },
+    {
+      "path": "math-sdk-drop-in/games/0_0_sewersurge/game_events.py",
+      "size_bytes": 368,
+      "sha256": "104cd66fcd5c7f1bffe2f49577ef55ada192147e43024366a11688c2fd11c63c"
+    },
+    {
+      "path": "math-sdk-drop-in/games/0_0_sewersurge/game_executables.py",
+      "size_bytes": 153,
+      "sha256": "84354fa060823c8d984e4741f34f264893e479bb7f73fa25349ee07751b15e4b"
+    },
+    {
+      "path": "math-sdk-drop-in/games/0_0_sewersurge/game_optimization.py",
+      "size_bytes": 4874,
+      "sha256": "da9843198d7c21ad64515fd0f2cabd22f57602553037ce26949ec393bd79d51f"
+    },
+    {
+      "path": "math-sdk-drop-in/games/0_0_sewersurge/game_override.py",
+      "size_bytes": 364,
+      "sha256": "cf6eeed2e1505097da361f6b68e7ccf9ab59f2a2841bb62590a715b80f354524"
+    },
+    {
+      "path": "math-sdk-drop-in/games/0_0_sewersurge/gamestate.py",
+      "size_bytes": 17406,
+      "sha256": "42904bf9fceb336e8a0d0ce08fafd71104e2d71139b58afe0ab855a030e1dffb"
+    },
+    {
+      "path": "math-sdk-drop-in/games/0_0_sewersurge/readme.txt",
+      "size_bytes": 1463,
+      "sha256": "4fd4376ebf9b1ce08d1892fd336e814ce4768ffe564dd80a42e955d899674709"
+    },
+    {
+      "path": "math-sdk-drop-in/games/0_0_sewersurge/reels/BR0.csv",
+      "size_bytes": 800,
+      "sha256": "9cea2c5f4d3cfeb58ed03f846763295f8de1daa896539c317b44fa337941bc6f"
+    },
+    {
+      "path": "math-sdk-drop-in/games/0_0_sewersurge/rules_validation.py",
+      "size_bytes": 6696,
+      "sha256": "53818f79ea71c6e5f78ba7a3c5b664c3d20b910a6469c6f306fbc72eb220d29b"
+    },
+    {
+      "path": "math-sdk-drop-in/games/0_0_sewersurge/run.py",
+      "size_bytes": 3249,
+      "sha256": "04981b577c3c803209c1b4a220ae998fd456f773f4fc59b3e65efe16c4474b52"
+    },
+    {
+      "path": "math-sdk-drop-in/games/0_0_sewersurge/scripts/audit_all_modes.py",
+      "size_bytes": 15948,
+      "sha256": "eb2c0defe3c045d6f3a33a9e4db8798d62a7cd93efda47ec0514236b2a99ca38"
+    },
+    {
+      "path": "math-sdk-drop-in/games/0_0_sewersurge/scripts/audit_books.py",
+      "size_bytes": 9079,
+      "sha256": "1e870c82fa3e1b72950de8f5146fcdb14fe91792eab305edbd11ec1e92f5f880"
+    },
+    {
+      "path": "math-sdk-drop-in/games/0_0_sewersurge/scripts/check_sdk_contract.py",
+      "size_bytes": 4752,
+      "sha256": "429d5817b85653342b12278df28ac2ca5f656032d55a2a1ebaf3e49393c05185"
+    },
+    {
+      "path": "math-sdk-drop-in/games/0_0_sewersurge/scripts/run_production.ps1",
+      "size_bytes": 1989,
+      "sha256": "085fa39c46625d8abd64ef41dfb1c869b10c90dce9182043e89cd18aeba6979a"
+    },
+    {
+      "path": "math-sdk-drop-in/games/0_0_sewersurge/scripts/run_production.sh",
+      "size_bytes": 1923,
+      "sha256": "b4f67ed413f8c811eafacd51fdc47fcca5aae5e16ed9e77d89f693e34b73580e"
+    },
+    {
+      "path": "math-sdk-drop-in/games/0_0_sewersurge/scripts/setup_windows.ps1",
+      "size_bytes": 2348,
+      "sha256": "f39bb601ac9b07c46643f226f6d851f18c49dbf4f275fcbc09f740ee3a66377f"
+    },
+    {
+      "path": "math-sdk-drop-in/games/0_0_sewersurge/scripts/validate_local.sh",
+      "size_bytes": 935,
+      "sha256": "e3835fc7afad4568062a249e4cbe1bc8e15fbad78b1088017473dca3d161d713"
+    },
+    {
+      "path": "math-sdk-drop-in/games/0_0_sewersurge/tests/conftest.py",
+      "size_bytes": 155,
+      "sha256": "22167ece9d548d5724df34bf34339ff2a35f10c0bb2c9db44baa97065ec77aad"
+    },
+    {
+      "path": "math-sdk-drop-in/games/0_0_sewersurge/tests/test_bet_modes.py",
+      "size_bytes": 2323,
+      "sha256": "a18a6ce573d3ac4c8aafa33131e080591041e3317ffb0e64910e998327607246"
+    },
+    {
+      "path": "math-sdk-drop-in/games/0_0_sewersurge/tests/test_gamestate.py",
+      "size_bytes": 4244,
+      "sha256": "1b3d729570cbe55c73043991a50a1d4cc21056e860a494d5f3674c4b9a54015c"
+    },
+    {
+      "path": "math-sdk-drop-in/games/0_0_sewersurge/tests/test_rules_validation.py",
+      "size_bytes": 5396,
+      "sha256": "d1e6994526fd6780f463fefb3255f6f1da30a1f9a5abfc00a250c8503e54d6ba"
+    },
+    {
+      "path": "validation/audio-assets-inventory.md",
+      "size_bytes": 11296,
+      "sha256": "6de5a789f2a61f854169df2ecf9975c15a4a0f7d7f89152b1e3f350691dfd2b4"
+    },
+    {
+      "path": "validation/four-mode-sdk-smoke.log",
+      "size_bytes": 4021,
+      "sha256": "646917840d53e558457727dbe7d81e50b63976bd7af14b4652ebf7ef3bc56bda"
+    },
+    {
+      "path": "validation/frontend-adapter-tests.log",
+      "size_bytes": 5188,
+      "sha256": "30c35b9d1d0c3df9030c180be44808a503d2dca2cd93340c6a01d74fa41e54df"
+    },
+    {
+      "path": "validation/frontend-adapter-tsc.log",
+      "size_bytes": 0,
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "path": "validation/frontend-wiring-status.json",
+      "size_bytes": 200,
+      "sha256": "f2cf98ce57b59f08da3623e2f134b839e15cfbaf4254277e0c3c0e7e37a954d5"
+    },
+    {
+      "path": "validation/latest-upgrade-checks.json",
+      "size_bytes": 4290,
+      "sha256": "901ff17c209592fa1bfa9223f92e5473e986bb9631d85a06c137696b01f58699"
+    },
+    {
+      "path": "validation/local-checks-status.json",
+      "size_bytes": 516,
+      "sha256": "4a10e20435625fd9a91b470a4b529c7c867601a14c99615182a018b7857e275c"
+    },
+    {
+      "path": "validation/math-tests.log",
+      "size_bytes": 294,
+      "sha256": "28079b0223eabfdde68bbfe81cecff003f8d7161a060453c4125775541f44916"
+    },
+    {
+      "path": "validation/python-syntax.log",
+      "size_bytes": 0,
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "path": "validation/shell-syntax.log",
+      "size_bytes": 0,
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "path": "validation/smoke-audit-output.json",
+      "size_bytes": 590567,
+      "sha256": "c5f3b3147180b2ae13cc4e1fac5a7bae30c745badc69af9f5febbd212755528a"
+    },
+    {
+      "path": "validation/smoke-audit-status.txt",
+      "size_bytes": 12,
+      "sha256": "85acfd2e79dd47df07d214334642196301332f72d792b52068cdfd8898755409"
+    },
+    {
+      "path": "validation/smoke-results-latest.json",
+      "size_bytes": 590567,
+      "sha256": "c5f3b3147180b2ae13cc4e1fac5a7bae30c745badc69af9f5febbd212755528a"
+    },
+    {
+      "path": "validation/smoke-results.json",
+      "size_bytes": 4644,
+      "sha256": "7b8b7bede114092996655e24b319dd88915e2e0921b26068ffe806bdf5d9cd5b"
+    },
+    {
+      "path": "validation/standalone-frontend-tests.log",
+      "size_bytes": 2524,
+      "sha256": "42f6723a1ec96a0dc64828c0e3f1a9766c321cc8506b28bbc5a90158b2b90ad3"
+    },
+    {
+      "path": "validation/validation-report.md",
+      "size_bytes": 5898,
+      "sha256": "b20ac204315bfafe6e845497d6abef2ee7e8782fac9be328e454921f0719ea5a"
+    },
+    {
+      "path": "validation/win-component-tsc.log",
+      "size_bytes": 208,
+      "sha256": "91eb53edecea06588237741d3b60aa30dd199baaf8c9c3d75a3064ab9de06800"
+    },
+    {
+      "path": "web-sdk-integration/README.md",
+      "size_bytes": 3500,
+      "sha256": "00d310eaeba036adebe9d42a272548eef0d34f12cfd7ecb0d56cfe9083fb04d9"
+    },
+    {
+      "path": "web-sdk-integration/SewerSurgeBoard.svelte",
+      "size_bytes": 6723,
+      "sha256": "b6cdbc19f6b5fecc9d366b9e6aadb074c59da2ee201d5d2f9afe8529bb250bb9"
+    },
+    {
+      "path": "web-sdk-integration/apps/sewer-surge/.eslintrc.cjs",
+      "size_bytes": 57,
+      "sha256": "3822105ea1f5079babd676ed6a067da96f433d31fa37be51e7196023caf5ccc9"
+    },
+    {
+      "path": "web-sdk-integration/apps/sewer-surge/.storybook/main.ts",
+      "size_bytes": 109,
+      "sha256": "1d2e7d2bd526d9763f8d30c5c3f7b5d4b81f57f408448ac26e2138b2338b0065"
+    },
+    {
+      "path": "web-sdk-integration/apps/sewer-surge/.storybook/preview.ts",
+      "size_bytes": 69,
+      "sha256": "389d36772c9b22cd07feaba55baac1bac7e23c5fc4189092f2165eda61f599dd"
+    },
+    {
+      "path": "web-sdk-integration/apps/sewer-surge/lingui.config.ts",
+      "size_bytes": 60,
+      "sha256": "a18adfd6bebc9c4cd5110a235b73aa588c298666fe6f49998fddc14df405d9f1"
+    },
+    {
+      "path": "web-sdk-integration/apps/sewer-surge/package.json",
+      "size_bytes": 1668,
+      "sha256": "ee27fb200fee54396aa228bdeabff5e4b7759dd2ba7f2d599ffd0bc18651e2f0"
+    },
+    {
+      "path": "web-sdk-integration/apps/sewer-surge/src/app.html",
+      "size_bytes": 411,
+      "sha256": "e68c54b5301eb929386e079f97c0bd78365659cab069c1fbd95d44640934f98a"
+    },
+    {
+      "path": "web-sdk-integration/apps/sewer-surge/src/components/Anticipation.svelte",
+      "size_bytes": 1400,
+      "sha256": "c5834826a3756e594a8cd5fcd9eb6802e631000924691eb6dfd3ac7e612fcf2c"
+    },
+    {
+      "path": "web-sdk-integration/apps/sewer-surge/src/components/Anticipations.svelte",
+      "size_bytes": 942,
+      "sha256": "c1925e8f73169930fd8a86085842718d4bd1e54dcb654e32e5923b2c5fb6eef7"
+    },
+    {
+      "path": "web-sdk-integration/apps/sewer-surge/src/components/Background.svelte",
+      "size_bytes": 1415,
+      "sha256": "a7fa7c959e859addd05f36e63e7b222a43988ffd4992fc0c6fc1d3ef97f19bb3"
+    },
+    {
+      "path": "web-sdk-integration/apps/sewer-surge/src/components/Board.svelte",
+      "size_bytes": 1720,
+      "sha256": "d5afb29f80dc2388c089e7c15e7020196bab166828c715855b719d3407badbc2"
+    },
+    {
+      "path": "web-sdk-integration/apps/sewer-surge/src/components/BoardBase.svelte",
+      "size_bytes": 324,
+      "sha256": "f6c69d3ebc69eae00ef87eaa605b3dd9a02ba88249979156b2e5d145c48f35f7"
+    },
+    {
+      "path": "web-sdk-integration/apps/sewer-surge/src/components/BoardContainer.svelte",
+      "size_bytes": 468,
+      "sha256": "f85bb9d6bb33b5115bae3400556ef2cf5b2a1f640660052438699389975dfe9c"
+    },
+    {
+      "path": "web-sdk-integration/apps/sewer-surge/src/components/BoardFrame.svelte",
+      "size_bytes": 2410,
+      "sha256": "88c1a329454d5dcb4f18ce3b330cd433b9505fa4f716dbd58ff871b126dee0f6"
+    },
+    {
+      "path": "web-sdk-integration/apps/sewer-surge/src/components/BoardMask.svelte",
+      "size_bytes": 634,
+      "sha256": "e55d56e2e158082fc19b12585a08c7f7c725b71f57c8717a425bdb32ec8ab44e"
+    },
+    {
+      "path": "web-sdk-integration/apps/sewer-surge/src/components/ClusterWinAmount.svelte",
+      "size_bytes": 2162,
+      "sha256": "bc4b8d87216a389b0451af28f794fd84924d7c642fd84df226ae46d6133dc499"
+    },
+    {
+      "path": "web-sdk-integration/apps/sewer-surge/src/components/ClusterWinAmounts.svelte",
+      "size_bytes": 943,
+      "sha256": "b68cc720acb9def8d99b08a3965ba400285eb9a7fbadb39a89ab3bf3a82031de"
+    },
+    {
+      "path": "web-sdk-integration/apps/sewer-surge/src/components/EnableGameActor.svelte",
+      "size_bytes": 1179,
+      "sha256": "d3647c4e23fcecaf4d034ca0c0e3d7ce612e9f2cb7dbe931a325d18ad362f7ec"
+    },
+    {
+      "path": "web-sdk-integration/apps/sewer-surge/src/components/EnableSound.svelte",
+      "size_bytes": 584,
+      "sha256": "f0d93b4b601fb5b070f8f5f8d59b87a630be3b6bd358b90d909a3d97be350577"
+    },
+    {
+      "path": "web-sdk-integration/apps/sewer-surge/src/components/FreeSpinAnimation.svelte",
+      "size_bytes": 1558,
+      "sha256": "44ae2cf4f5415253d0d1e9c3b9818f11081e66e12e280266f11acacfdc7968fb"
+    },
+    {
+      "path": "web-sdk-integration/apps/sewer-surge/src/components/FreeSpinCounter.svelte",
+      "size_bytes": 2661,
+      "sha256": "bf4059cfbf369c10cbec3960599d0d302159aaaf4d3eed23fe80717c13a475cb"
+    },
+    {
+      "path": "web-sdk-integration/apps/sewer-surge/src/components/FreeSpinIntro.svelte",
+      "size_bytes": 2462,
+      "sha256": "b6f7714773e6d4c193560c81663aa4584ac85a2c3889bf86a002075b9a9920a7"
+    },
+    {
+      "path": "web-sdk-integration/apps/sewer-surge/src/components/FreeSpinOutro.svelte",
+      "size_bytes": 3583,
+      "sha256": "01d79a83ad3f704b9152368fce87b53db1fe149bb2afebe7d00c098ac80017c6"
+    },
+    {
+      "path": "web-sdk-integration/apps/sewer-surge/src/components/Game.svelte",
+      "size_bytes": 1632,
+      "sha256": "bf0aa91e18f42bdc75d28f867af12d491273f2a8a68eff3160f348def366de01"
+    },
+    {
+      "path": "web-sdk-integration/apps/sewer-surge/src/components/GlobalMultiplier.svelte",
+      "size_bytes": 3353,
+      "sha256": "3239c8afa0d6a09567dd21ce678930cf64a19242f4b12dc0dfd3ce288b9cd166"
+    },
+    {
+      "path": "web-sdk-integration/apps/sewer-surge/src/components/I18nTest.svelte",
+      "size_bytes": 714,
+      "sha256": "a48b6de22c2d5ade666270de7a509283cbe900dfd68fe0b817efb848d9d7f9ab"
+    },
+    {
+      "path": "web-sdk-integration/apps/sewer-surge/src/components/LoadingScreen.svelte",
+      "size_bytes": 1809,
+      "sha256": "5600045650b8659a9b30356946d508ca3a0641b8c592853e65316d9c7b06a5b5"
+    },
+    {
+      "path": "web-sdk-integration/apps/sewer-surge/src/components/MultiplierGrid.svelte",
+      "size_bytes": 1827,
+      "sha256": "0f947999dafa3d1042e550d646dbdf4abc13ad6ecb471a753a668b3cf1a57342"
+    },
+    {
+      "path": "web-sdk-integration/apps/sewer-surge/src/components/PressToContinue.svelte",
+      "size_bytes": 800,
+      "sha256": "d95551ca83cbe300cce66cf47cbd69343b5a7ca005cac4ae98697a3b29d85ad4"
+    },
+    {
+      "path": "web-sdk-integration/apps/sewer-surge/src/components/ReelSymbol.svelte",
+      "size_bytes": 985,
+      "sha256": "2551248c14b9a6cda0fffc93fa0fb42d97abac8f51629fd9eefa1eaa5fb0e390"
+    },
+    {
+      "path": "web-sdk-integration/apps/sewer-surge/src/components/ResumeBet.svelte",
+      "size_bytes": 394,
+      "sha256": "6e94fd2fb4390a6bb99f9022f9122f772e123c621ba0209462a9596845ab3099"
+    },
+    {
+      "path": "web-sdk-integration/apps/sewer-surge/src/components/SewerSurgeBoard.svelte",
+      "size_bytes": 23246,
+      "sha256": "0ebdfbb54f4375c2504b83535bfe0b043eadb7586b382f6f119b6eb4dfcb941a"
+    },
+    {
+      "path": "web-sdk-integration/apps/sewer-surge/src/components/SewerSurgeWin.svelte",
+      "size_bytes": 4652,
+      "sha256": "ad7a9463ac3da0e53d9bdce0ddf70b0562abf588b149a4190944801b382d8e43"
+    },
+    {
+      "path": "web-sdk-integration/apps/sewer-surge/src/components/Sound.svelte",
+      "size_bytes": 2598,
+      "sha256": "b89bb0cbd65e4b86b30bdba5db8594f680ffba9472212fbf0a58becc88971693"
+    },
+    {
+      "path": "web-sdk-integration/apps/sewer-surge/src/components/Symbol.svelte",
+      "size_bytes": 1509,
+      "sha256": "75052cdc4719b8f643bd142d8410a1c2ed2c586da23bf3387e333a830ff78e0c"
+    },
+    {
+      "path": "web-sdk-integration/apps/sewer-surge/src/components/SymbolSpine.svelte",
+      "size_bytes": 515,
+      "sha256": "ca6f353bb424fe54fa597cb5ec6971ce8b4cc0ee18fcdb7f3f6f039e5609947b"
+    },
+    {
+      "path": "web-sdk-integration/apps/sewer-surge/src/components/SymbolSpineMain.svelte",
+      "size_bytes": 772,
+      "sha256": "df7e50ac8c0a722b40a685d36b74df72092f6b3310738e3a87a3e207b1b98ee7"
+    },
+    {
+      "path": "web-sdk-integration/apps/sewer-surge/src/components/SymbolSprite.svelte",
+      "size_bytes": 692,
+      "sha256": "57b88dd3fecf95dd7776ae93870c35745478109ff7a5c7357d4ac0eccfc88a12"
+    },
+    {
+      "path": "web-sdk-integration/apps/sewer-surge/src/components/SymbolWrap.svelte",
+      "size_bytes": 758,
+      "sha256": "9b06e20a4f5a57201bcc96f44bab4748f5bc4bd417e7a592670878376e7c02c5"
+    },
+    {
+      "path": "web-sdk-integration/apps/sewer-surge/src/components/Transition.svelte",
+      "size_bytes": 689,
+      "sha256": "02814f4653ad949ff19ff11c521e2b5b9d4b01359dc7e5286725ca9ba7204579"
+    },
+    {
+      "path": "web-sdk-integration/apps/sewer-surge/src/components/TransitionAnimation.svelte",
+      "size_bytes": 593,
+      "sha256": "eacf72899543e32d7bef03022c07b757e8a5e51d78582208866e264405b7fc04"
+    },
+    {
+      "path": "web-sdk-integration/apps/sewer-surge/src/components/TumbleBoard.svelte",
+      "size_bytes": 4509,
+      "sha256": "7792118306edfe69ebd2f0fd71dda3a6f5ceefd1edccd079bcbfbe0de293510f"
+    },
+    {
+      "path": "web-sdk-integration/apps/sewer-surge/src/components/TumbleBoardBase.svelte",
+      "size_bytes": 357,
+      "sha256": "bc691c81fe9e7feab33c29b59cfe9a3f1e46cc74e57597a71f70d7f36e6b74db"
+    },
+    {
+      "path": "web-sdk-integration/apps/sewer-surge/src/components/TumbleSymbol.svelte",
+      "size_bytes": 772,
+      "sha256": "03239cf129815f6e0033da400205a899ea49c03eaa8451f15f9ff25117da9349"
+    },
+    {
+      "path": "web-sdk-integration/apps/sewer-surge/src/components/TumbleWinAmount.svelte",
+      "size_bytes": 1446,
+      "sha256": "ec0e2cf9e2820f5d42ffb83b93a4bb94d2be4ef7155af0423ed48fe1ad641423"
+    },
+    {
+      "path": "web-sdk-integration/apps/sewer-surge/src/components/TumbleWinAmountFrame.svelte",
+      "size_bytes": 1066,
+      "sha256": "ec883f6b2df7c07dd8a930342e30a0c1260654c06e6060c23688c49fcb8e9ea6"
+    },
+    {
+      "path": "web-sdk-integration/apps/sewer-surge/src/components/TumbleWinAmountText.svelte",
+      "size_bytes": 1599,
+      "sha256": "38f4214132b32315a2e81d9634b50ac6f3a7cdcc2e9df51c89e68f69fbe5976b"
+    },
+    {
+      "path": "web-sdk-integration/apps/sewer-surge/src/components/TumbleWinAmountWrap.svelte",
+      "size_bytes": 1119,
+      "sha256": "2cbbf445a4a318b3206c98417463b17046382b0ba4239cd5da62c91155728e96"
+    },
+    {
+      "path": "web-sdk-integration/apps/sewer-surge/src/components/Win.svelte",
+      "size_bytes": 3295,
+      "sha256": "98b5b2619a0a029914b4e69a3b3d3a8644c007134de735c8e30385acaf7a3920"
+    },
+    {
+      "path": "web-sdk-integration/apps/sewer-surge/src/components/WinAnimation.svelte",
+      "size_bytes": 1241,
+      "sha256": "f17211cabe80837dcbe427b13ac532cc14d0dd110ff71aaeb47e0ce8631621f8"
+    },
+    {
+      "path": "web-sdk-integration/apps/sewer-surge/src/components/WinCoins.svelte",
+      "size_bytes": 942,
+      "sha256": "cf43ef54fa9fa6d4885671c6ff2e515adb886ae31fde38aa8c5cc204fa388f03"
+    },
+    {
+      "path": "web-sdk-integration/apps/sewer-surge/src/game/actor.ts",
+      "size_bytes": 2516,
+      "sha256": "f2b81de55e769ad8195bbc53b9f67fafcea561853c5e69b70cffe4d479bd0616"
+    },
+    {
+      "path": "web-sdk-integration/apps/sewer-surge/src/game/assets.ts",
+      "size_bytes": 8247,
+      "sha256": "fd8efb382203af8560dbd7dfd040ee1eb9bdc85f5e6f712f91a02a6593c0a4be"
+    },
+    {
+      "path": "web-sdk-integration/apps/sewer-surge/src/game/bookEventHandlerMap.ts",
+      "size_bytes": 13113,
+      "sha256": "dcf73ab8571c7ecbc9b235373f59f25b44efcb0ae2f827dea3f1aa82b8f2f2cd"
+    },
+    {
+      "path": "web-sdk-integration/apps/sewer-surge/src/game/config.ts",
+      "size_bytes": 8667,
+      "sha256": "b919d5d4d740bdadf60dcfe8be98b85c80ba15b6d992df945e25f56357d792c0"
+    },
+    {
+      "path": "web-sdk-integration/apps/sewer-surge/src/game/constants.ts",
+      "size_bytes": 7844,
+      "sha256": "dc0c893525c3dcca2ceaf1a060cae6eae9b7d198c264ec6e66268774de8a51b7"
+    },
+    {
+      "path": "web-sdk-integration/apps/sewer-surge/src/game/context.ts",
+      "size_bytes": 1069,
+      "sha256": "40a7183fc00f9bfd9bea8632518bd2b3d904a7aa999c8413426284e91dd984ed"
+    },
+    {
+      "path": "web-sdk-integration/apps/sewer-surge/src/game/eventEmitter.ts",
+      "size_bytes": 479,
+      "sha256": "071fd9e6360a1463aa862cccbc13ff053aa8f59bd743bb1c601099d35d88ffec"
+    },
+    {
+      "path": "web-sdk-integration/apps/sewer-surge/src/game/sewerSurgeAdapter.ts",
+      "size_bytes": 7864,
+      "sha256": "624f309db9b4025f52c7e4324462e12c8c0585469a34ac87bc9ff847f34e5b01"
+    },
+    {
+      "path": "web-sdk-integration/apps/sewer-surge/src/game/sewerSurgeTypes.ts",
+      "size_bytes": 1070,
+      "sha256": "d0ae4fec9ef4780d4dfd1d4e4c9ed97b91c28013940824b26e060f3f6d3d53ac"
+    },
+    {
+      "path": "web-sdk-integration/apps/sewer-surge/src/game/sound.ts",
+      "size_bytes": 1408,
+      "sha256": "4757c8a7d2a614c9e986d1486b19936543b19f749d7bd94e92d33f8ff7182039"
+    },
+    {
+      "path": "web-sdk-integration/apps/sewer-surge/src/game/stateApp.ts",
+      "size_bytes": 125,
+      "sha256": "aa33874e4bfd9989ae05207950c3bbe3b3896ab95b642d6d667e8c91154d8c6c"
+    },
+    {
+      "path": "web-sdk-integration/apps/sewer-surge/src/game/stateGame.svelte.ts",
+      "size_bytes": 3736,
+      "sha256": "61928b326e85a2dca4bd5a3bb99a29239839827701e2cd831a2a32d88402a2fa"
+    },
+    {
+      "path": "web-sdk-integration/apps/sewer-surge/src/game/stateLayout.ts",
+      "size_bytes": 376,
+      "sha256": "5801707a25d779c5c49f4e74ecf122cda6f77dd01403e736c5d34200943d3bed"
+    },
+    {
+      "path": "web-sdk-integration/apps/sewer-surge/src/game/stateXstate.ts",
+      "size_bytes": 113,
+      "sha256": "69b6de8ec14fe401cb645e3e2a4a17d59baf6206ab843b3bf868039c0fe45e61"
+    },
+    {
+      "path": "web-sdk-integration/apps/sewer-surge/src/game/types.ts",
+      "size_bytes": 604,
+      "sha256": "81a20611a2fa85964efddea2a37c0912e28c7c30f54860ceb9bbcb07a87d8398"
+    },
+    {
+      "path": "web-sdk-integration/apps/sewer-surge/src/game/typesBookEvent.ts",
+      "size_bytes": 2717,
+      "sha256": "df854ed8a2f5e422746a63c61dec007cb97024d0a15ddb25c73e9ed794cb5ef4"
+    },
+    {
+      "path": "web-sdk-integration/apps/sewer-surge/src/game/typesEmitterEvent.ts",
+      "size_bytes": 1449,
+      "sha256": "188c6cc41ca918bf3ecaceccce6c2c1eae91d6cc4b06ee86814dc1b4440a06e5"
+    },
+    {
+      "path": "web-sdk-integration/apps/sewer-surge/src/game/utils.ts",
+      "size_bytes": 2494,
+      "sha256": "b4dd0019a0fbbbf921477db982b77dbf4f59dacdb83acc34bd38524b63cb5c68"
+    },
+    {
+      "path": "web-sdk-integration/apps/sewer-surge/src/game/winLevelMap.ts",
+      "size_bytes": 2400,
+      "sha256": "d15449d1439ba9a5ccd3e34518144499d289fa4bfabe7d893b0965262626e32f"
+    },
+    {
+      "path": "web-sdk-integration/apps/sewer-surge/src/hooks.server.ts",
+      "size_bytes": 300,
+      "sha256": "8648b18f6ff848c43ab526b3d1bc62a311c214a10c00e4ada8e276c90574d823"
+    },
+    {
+      "path": "web-sdk-integration/apps/sewer-surge/src/i18n/i18nDerived.ts",
+      "size_bytes": 388,
+      "sha256": "c019b800cf5de00bf30252419a38d472f166177cb6be991dd29861ed703a1316"
+    },
+    {
+      "path": "web-sdk-integration/apps/sewer-surge/src/i18n/messagesMap/en.ts",
+      "size_bytes": 35,
+      "sha256": "69a7cfef9a63b49dc0a6416f923eb019e72ac0fa0a804c13b0fe44ef7cb430a5"
+    },
+    {
+      "path": "web-sdk-integration/apps/sewer-surge/src/i18n/messagesMap/index.ts",
+      "size_bytes": 410,
+      "sha256": "3e47c9ae13dab0e17b02550e0389ba421a8693fdeb281cdde74fddf3d36c4ee8"
+    },
+    {
+      "path": "web-sdk-integration/apps/sewer-surge/src/i18n/messagesMap/zh.ts",
+      "size_bytes": 37,
+      "sha256": "38cde30c68123a0b8a76406dd0856f0cf286cda034ac5da511b7a5f5f6b99a07"
+    },
+    {
+      "path": "web-sdk-integration/apps/sewer-surge/src/routes/+layout.svelte",
+      "size_bytes": 1069,
+      "sha256": "4b2e35099867e5fcea215f855d35645cc34f8dd3efc27ddd6d9b9c0884c1af1b"
+    },
+    {
+      "path": "web-sdk-integration/apps/sewer-surge/src/routes/+layout.ts",
+      "size_bytes": 652,
+      "sha256": "c45c78a970ee62ae40ee4f0c6506a62eeafdb3cf8aaeaab9893593470e41a71e"
+    },
+    {
+      "path": "web-sdk-integration/apps/sewer-surge/src/routes/+page.svelte",
+      "size_bytes": 0,
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "path": "web-sdk-integration/apps/sewer-surge/src/stories/ComponentsGame.stories.svelte",
+      "size_bytes": 1291,
+      "sha256": "1a672858b5935206d0bef61efdc527cbbfed6732263f9c6de2424af8803f4de3"
+    },
+    {
+      "path": "web-sdk-integration/apps/sewer-surge/src/stories/ComponentsSymbol.stories.svelte",
+      "size_bytes": 1921,
+      "sha256": "16b339f21ae4b54fdaa5d71fdd1f91704f658113b0b778060dbe930c40e803ac"
+    },
+    {
+      "path": "web-sdk-integration/apps/sewer-surge/src/stories/ModeBaseBook.stories.svelte",
+      "size_bytes": 1149,
+      "sha256": "06d932be1221202f56ff043e6438c08fd78167e1af4cb13edc556a1f03f36179"
+    },
+    {
+      "path": "web-sdk-integration/apps/sewer-surge/src/stories/ModeBaseBookEvent.stories.svelte",
+      "size_bytes": 3347,
+      "sha256": "0d860786d9f67008f73c98ed5ce79e334bc1fe09bd3d22f07bb5479cc474a2c5"
+    },
+    {
+      "path": "web-sdk-integration/apps/sewer-surge/src/stories/ModeBonusBook.stories.svelte",
+      "size_bytes": 1151,
+      "sha256": "8c9ae9937b8bcf0f84630f9667efd6df672f69117ca5cff67cbc10428b577d3d"
+    },
+    {
+      "path": "web-sdk-integration/apps/sewer-surge/src/stories/ModeBonusBookEvent.stories.svelte",
+      "size_bytes": 3361,
+      "sha256": "3613c09a9cfc59fd4e1b0a68f03e4131c071013989910442d01ef8a72b53273f"
+    },
+    {
+      "path": "web-sdk-integration/apps/sewer-surge/src/stories/data/base_books.ts",
+      "size_bytes": 339207,
+      "sha256": "f7e50e440081317c7a5cdf67d11925a23fdb3f13c87c6d687e2a2da7520123d0"
+    },
+    {
+      "path": "web-sdk-integration/apps/sewer-surge/src/stories/data/base_events.ts",
+      "size_bytes": 5098,
+      "sha256": "faa631908df6b9709ea586b9f47c89e6acd6290096d026bcdf6df85b772c98c7"
+    },
+    {
+      "path": "web-sdk-integration/apps/sewer-surge/src/stories/data/bonus_books.ts",
+      "size_bytes": 2482160,
+      "sha256": "2ded5a64f4bd617c056fd8db889f44e1cccafd5fea7f459415b2cad62a402ce6"
+    },
+    {
+      "path": "web-sdk-integration/apps/sewer-surge/src/stories/data/bonus_events.ts",
+      "size_bytes": 5098,
+      "sha256": "faa631908df6b9709ea586b9f47c89e6acd6290096d026bcdf6df85b772c98c7"
+    },
+    {
+      "path": "web-sdk-integration/apps/sewer-surge/static/assets/audio/sounds.ac3",
+      "size_bytes": 4872150,
+      "sha256": "1224f2f07f6b965a21a726201caaea8e5c8294b9336fb3c5e8706000ae9af195"
+    },
+    {
+      "path": "web-sdk-integration/apps/sewer-surge/static/assets/audio/sounds.json",
+      "size_bytes": 4921,
+      "sha256": "0aa71049d06a5ef042a61c2c7d4fb53a920a1d3d54e1380d0608bb750833b58b"
+    },
+    {
+      "path": "web-sdk-integration/apps/sewer-surge/static/assets/audio/sounds.m4a",
+      "size_bytes": 4169976,
+      "sha256": "d5d4749c94a2b533d1d76f33301b8cd0c38e7f24448e46c34b3c7ff184bef6c1"
+    },
+    {
+      "path": "web-sdk-integration/apps/sewer-surge/static/assets/audio/sounds.mp3",
+      "size_bytes": 4872925,
+      "sha256": "f4430e11dde80d0c0940de8ad40785fb71a1f0644d3305012e13008f8e3e5333"
+    },
+    {
+      "path": "web-sdk-integration/apps/sewer-surge/static/assets/audio/sounds.ogg",
+      "size_bytes": 3726515,
+      "sha256": "4326d53307a2844b7f7455a787b793b137fd46338b556467ce889919f936e036"
+    },
+    {
+      "path": "web-sdk-integration/apps/sewer-surge/static/assets/fonts/goldBlur/index.ts",
+      "size_bytes": 186,
+      "sha256": "77409a47ad79a09e4d488282a7e6ad4a2981b03ed587f20d7aad722b1b3e9619"
+    },
+    {
+      "path": "web-sdk-integration/apps/sewer-surge/static/assets/fonts/goldBlur/miningfont_gold_blur.json",
+      "size_bytes": 1633,
+      "sha256": "2d5d415555f9d7ffffe80572ba5d3eb330e8726e4da43fc7f2762016aa01bf91"
+    },
+    {
+      "path": "web-sdk-integration/apps/sewer-surge/static/assets/fonts/goldBlur/miningfont_gold_blur.png",
+      "size_bytes": 384721,
+      "sha256": "46f343e39d7fb9a74471efca907a9256a10b15bb5181c3937693f253fd35c8c8"
+    },
+    {
+      "path": "web-sdk-integration/apps/sewer-surge/static/assets/fonts/goldBlur/miningfont_gold_blur.webp",
+      "size_bytes": 80994,
+      "sha256": "cad796bda2415781bc808e3afc807dff40d9d78725fb04ce86b0c657ba0b033d"
+    },
+    {
+      "path": "web-sdk-integration/apps/sewer-surge/static/assets/fonts/goldBlur/miningfont_gold_blur.xml",
+      "size_bytes": 1743,
+      "sha256": "404286e0946b77073eb40ed35f464b9f4344aaa69f9deae34a60666fc53a95a3"
+    },
+    {
+      "path": "web-sdk-integration/apps/sewer-surge/static/assets/fonts/goldFont/index.ts",
+      "size_bytes": 160,
+      "sha256": "9494981fa343e0ca925b8464340039cb9463b7f3efa33497719b360a29fad22c"
+    },
+    {
+      "path": "web-sdk-integration/apps/sewer-surge/static/assets/fonts/goldFont/mm_gold.json",
+      "size_bytes": 7188,
+      "sha256": "10df5e12f320c589688d6eecfce17cd14d469b3f3e6eea10de2814f860314d5a"
+    },
+    {
+      "path": "web-sdk-integration/apps/sewer-surge/static/assets/fonts/goldFont/mm_gold.png",
+      "size_bytes": 324997,
+      "sha256": "106e0b89037127e89b9d267e1f7eab2b9d4d395fcdd3a0c68464cd7c0c89cf91"
+    },
+    {
+      "path": "web-sdk-integration/apps/sewer-surge/static/assets/fonts/goldFont/mm_gold.webp",
+      "size_bytes": 261378,
+      "sha256": "720bbf00c74fe22cc4c0e8f3047a2cefa3faad38deda6565eff7135e74751eb9"
+    },
+    {
+      "path": "web-sdk-integration/apps/sewer-surge/static/assets/fonts/goldFont/mm_gold.xml",
+      "size_bytes": 6916,
+      "sha256": "46dfccabe69143f9d8dcd749beae84f9590b4863188e256654ff90fb58bf06f2"
+    },
+    {
+      "path": "web-sdk-integration/apps/sewer-surge/static/assets/fonts/purpleFont/index.ts",
+      "size_bytes": 164,
+      "sha256": "411afb5248f0eb3fa5085cc69eff613b919a0875e6c3e7b3c42f56b2f2d1bf55"
+    },
+    {
+      "path": "web-sdk-integration/apps/sewer-surge/static/assets/fonts/purpleFont/mm_purple.json",
+      "size_bytes": 1629,
+      "sha256": "9c196079c17c0a23025b4348285066e12a45eb4672b836070d7eb8d0e0bf3135"
+    },
+    {
+      "path": "web-sdk-integration/apps/sewer-surge/static/assets/fonts/purpleFont/mm_purple.png",
+      "size_bytes": 48354,
+      "sha256": "306020b7f57ec52b09f3eee9ac0e1af2587f8808b906fb3cc6f1b43ab95db26e"
+    },
+    {
+      "path": "web-sdk-integration/apps/sewer-surge/static/assets/fonts/purpleFont/mm_purple.xml",
+      "size_bytes": 1722,
+      "sha256": "d586298554a396ca8dc43620e0dc0da45d67ed42a94a8010bd34777c57035792"
+    },
+    {
+      "path": "web-sdk-integration/apps/sewer-surge/static/assets/fonts/silverFont/index.ts",
+      "size_bytes": 164,
+      "sha256": "452c42c7aa66787bb5606c10523b215555579f2723b38d7b523b411ad06d6ff1"
+    },
+    {
+      "path": "web-sdk-integration/apps/sewer-surge/static/assets/fonts/silverFont/mm_silver.json",
+      "size_bytes": 8751,
+      "sha256": "e4e6c3efa5d8afe91b7219becddd4fb30ce52a1bc42493319b0cd1e46cc2fecb"
+    },
+    {
+      "path": "web-sdk-integration/apps/sewer-surge/static/assets/fonts/silverFont/mm_silver.png",
+      "size_bytes": 809227,
+      "sha256": "6793c66aee837e9e67fdcb508ad8b60be50be3d5653c0cd29960c83d0048d779"
+    },
+    {
+      "path": "web-sdk-integration/apps/sewer-surge/static/assets/fonts/silverFont/mm_silver.xml",
+      "size_bytes": 8378,
+      "sha256": "0cbf7df4ed16dfd50fa98101419e08e9f1cf0b6113059e975bcb3da1aefc446f"
+    },
+    {
+      "path": "web-sdk-integration/apps/sewer-surge/static/assets/spines/anticipation/anticipation.atlas",
+      "size_bytes": 1158,
+      "sha256": "852430b696077222d3fe933c4094c5ac13d0a0646416a336c03b99b0e34070ad"
+    },
+    {
+      "path": "web-sdk-integration/apps/sewer-surge/static/assets/spines/anticipation/anticipation.json",
+      "size_bytes": 345030,
+      "sha256": "8cc6f3a8ab7e5fb7ca40c20ad89a313dc965158478553e9353a1d5e1a3f8016e"
+    },
+    {
+      "path": "web-sdk-integration/apps/sewer-surge/static/assets/spines/anticipation/anticipation.png",
+      "size_bytes": 792123,
+      "sha256": "2456fc367a19908c42f5bda9346bfe5af5405a9342fcf80f2cd62bfbf6f7e8a0"
+    },
+    {
+      "path": "web-sdk-integration/apps/sewer-surge/static/assets/spines/anticipation/anticipation.webp",
+      "size_bytes": 198286,
+      "sha256": "cea7964f9feffdc2d753575b86a7822f9a083fa57d63cdc842e049a163e719e5"
+    },
+    {
+      "path": "web-sdk-integration/apps/sewer-surge/static/assets/spines/anticipation/index.ts",
+      "size_bytes": 227,
+      "sha256": "2d88883c91f80119a668e4d569139d78941f38936bfcd81e18efe45719cd6af2"
+    },
+    {
+      "path": "web-sdk-integration/apps/sewer-surge/static/assets/spines/bigwin/big_wins.atlas",
+      "size_bytes": 909,
+      "sha256": "0e5f31b138f6d09372868cf0d200fc7ef3fda003f3a78b7bbffe79fcb83e9ddb"
+    },
+    {
+      "path": "web-sdk-integration/apps/sewer-surge/static/assets/spines/bigwin/big_wins.png",
+      "size_bytes": 658879,
+      "sha256": "5c93458b6922d13ceab6f6259f3dc3c28ca2ffbbd05114133348a06434081b3d"
+    },
+    {
+      "path": "web-sdk-integration/apps/sewer-surge/static/assets/spines/bigwin/big_wins.webp",
+      "size_bytes": 254814,
+      "sha256": "0645786a267239a0a7d441da0b3b54ff0a7d9eeb3dc2d9e4497242006ba34ddc"
+    },
+    {
+      "path": "web-sdk-integration/apps/sewer-surge/static/assets/spines/bigwin/index.ts",
+      "size_bytes": 216,
+      "sha256": "dd463c5fb01094afbae6867bf16cc78320733d2ba8c98de241beca1cf0f7f533"
+    },
+    {
+      "path": "web-sdk-integration/apps/sewer-surge/static/assets/spines/bigwin/mm_bigwin.json",
+      "size_bytes": 1083951,
+      "sha256": "d1072de7d6d474736171d1a9bb2c54a5d429ff5ffc311f30fa0b1851f8e48423"
+    },
+    {
+      "path": "web-sdk-integration/apps/sewer-surge/static/assets/spines/bonusButton/2.0/buy_button.atlas",
+      "size_bytes": 547,
+      "sha256": "f10e39af75ede691579e0c56a2ef8934cef69fde6b717ea9c547579d53646460"
+    },
+    {
+      "path": "web-sdk-integration/apps/sewer-surge/static/assets/spines/bonusButton/2.0/buy_button.json",
+      "size_bytes": 18388,
+      "sha256": "48ef4f09ff444ecfeda37734b65783d7bbc9d7c6d3d095abc179e0873a922f29"
+    },
+    {
+      "path": "web-sdk-integration/apps/sewer-surge/static/assets/spines/bonusButton/2.0/buy_button.png",
+      "size_bytes": 144882,
+      "sha256": "c1f549575cdc966b117217eb33245ad134c0bcb4480f914bea04d474724f5e62"
+    },
+    {
+      "path": "web-sdk-integration/apps/sewer-surge/static/assets/spines/bonusButton/2.0/buy_button.webp",
+      "size_bytes": 34224,
+      "sha256": "5ce1954ba41f1c0c2ab8f25d6fc038be0f47a217a3b8b5ad21f0397b96301b20"
+    },
+    {
+      "path": "web-sdk-integration/apps/sewer-surge/static/assets/spines/bonusButton/buy_button.atlas",
+      "size_bytes": 745,
+      "sha256": "93932dece4bfa344c5f9321fc2b005c60febd95d73719d74dcadcf936318611f"
+    },
+    {
+      "path": "web-sdk-integration/apps/sewer-surge/static/assets/spines/bonusButton/buy_button.json",
+      "size_bytes": 10607,
+      "sha256": "8d3411afe3c7253c365fbe8fa77f606e6926edcb28c7037df813ccda8098dc08"
+    },
+    {
+      "path": "web-sdk-integration/apps/sewer-surge/static/assets/spines/bonusButton/buy_button.png",
+      "size_bytes": 675138,
+      "sha256": "07a9175900cc72de3ef312fcf620bf3919e2417975ff405273c749f40fe5073f"
+    },
+    {
+      "path": "web-sdk-integration/apps/sewer-surge/static/assets/spines/bonusButton/buy_button.webp",
+      "size_bytes": 105688,
+      "sha256": "2bb5fe9ab624affc31100ab9c22a052f86113633914c4f32f550aa2e6460c84e"
+    },
+    {
+      "path": "web-sdk-integration/apps/sewer-surge/static/assets/spines/bonusButton/index.ts",
+      "size_bytes": 227,
+      "sha256": "87fc72e50a93a7a37d78755819d4df791ce413ce26b3e70f1c8254ca972f62fa"
+    },
+    {
+      "path": "web-sdk-integration/apps/sewer-surge/static/assets/spines/clusterWin/clusterpay.atlas",
+      "size_bytes": 212,
+      "sha256": "0be3ff2e00207d59164e1628576ca2f79af92699b5deeaad9882a84261e61472"
+    },
+    {
+      "path": "web-sdk-integration/apps/sewer-surge/static/assets/spines/clusterWin/clusterpay.json",
+      "size_bytes": 8757,
+      "sha256": "16e74b4b4fd44f1ad1fa9f423df6c7a318faf5118b93566b84bad4a8a10860e6"
+    },
+    {
+      "path": "web-sdk-integration/apps/sewer-surge/static/assets/spines/clusterWin/clusterpay.png",
+      "size_bytes": 9295,
+      "sha256": "6f976a7e53509d8564c7eded4b4659a00dd306ef8c17fa2766fbc770f45be957"
+    },
+    {
+      "path": "web-sdk-integration/apps/sewer-surge/static/assets/spines/clusterWin/clusterpay.webp",
+      "size_bytes": 3192,
+      "sha256": "a8755a3da56b73f6488fb953a2889684411173dfbbbd9a6a844a86747e9e67d9"
+    },
+    {
+      "path": "web-sdk-integration/apps/sewer-surge/static/assets/spines/clusterWin/index.ts",
+      "size_bytes": 221,
+      "sha256": "d1522026739810510eed6e4eac1c2ab01b0670549f71b220a4765c21407762f0"
+    },
+    {
+      "path": "web-sdk-integration/apps/sewer-surge/static/assets/spines/foregroundAnimation/index.ts",
+      "size_bytes": 221,
+      "sha256": "d1d162387fb60841750baaa5d9cba71022c011c3d43ed1fecb7e0955bc06a108"
+    },
+    {
+      "path": "web-sdk-integration/apps/sewer-surge/static/assets/spines/foregroundAnimation/mm_bg.atlas",
+      "size_bytes": 1119,
+      "sha256": "ae324511f9eb1703c99a944e202d3f35ad125e7999b865f70ec5261fa0bfc5ec"
+    },
+    {
+      "path": "web-sdk-integration/apps/sewer-surge/static/assets/spines/foregroundAnimation/mm_bg.json",
+      "size_bytes": 87808,
+      "sha256": "479e46fa3167b1359b6fdcb0c65a60bcfe64267c52d52ddda71ef0b0473a1b99"
+    },
+    {
+      "path": "web-sdk-integration/apps/sewer-surge/static/assets/spines/foregroundAnimation/mm_bg.png",
+      "size_bytes": 2387117,
+      "sha256": "c79d2adbea11ea438238221383b46eafe404cdd8b74946abaef0698304270728"
+    },
+    {
+      "path": "web-sdk-integration/apps/sewer-surge/static/assets/spines/foregroundAnimation/mm_bg.webp",
+      "size_bytes": 397202,
+      "sha256": "ebef6a540ab7588b58348e03d54498a211990f1fcf095c6660de4cb4fd465d54"
+    },
+    {
+      "path": "web-sdk-integration/apps/sewer-surge/static/assets/spines/foregroundFeatureAnimation/index.ts",
+      "size_bytes": 245,
+      "sha256": "0da09469c5ea13d2c2f23e317ef228f24a45dc549a1d0a371d9c4fb7fa1c83db"
+    },
+    {
+      "path": "web-sdk-integration/apps/sewer-surge/static/assets/spines/foregroundFeatureAnimation/mm_bg_feature.atlas",
+      "size_bytes": 1166,
+      "sha256": "58c609ba344a35533b1e0f0bf9e346db76560ebe56be160e3e3c83f61c0e5f00"
+    },
+    {
+      "path": "web-sdk-integration/apps/sewer-surge/static/assets/spines/foregroundFeatureAnimation/mm_bg_feature.json",
+      "size_bytes": 87844,
+      "sha256": "ed6ea20006d9396da86e25c2cd1b0a4ba8cb0ab2f0b586e84b2dca8da5a12871"
+    },
+    {
+      "path": "web-sdk-integration/apps/sewer-surge/static/assets/spines/foregroundFeatureAnimation/mm_bg_feature.png",
+      "size_bytes": 2000352,
+      "sha256": "a8c7d25fe54ecd6be1249ed4a1bc7abb729593a16d75556a0f1af6605a2ecb94"
+    },
+    {
+      "path": "web-sdk-integration/apps/sewer-surge/static/assets/spines/foregroundFeatureAnimation/mm_bg_feature.webp",
+      "size_bytes": 316110,
+      "sha256": "c590c5e68324040a084fd122ef976760c7f4baa99c97c3b81b637c75d1b34d81"
+    },
+    {
+      "path": "web-sdk-integration/apps/sewer-surge/static/assets/spines/fsIntro/fs_screen.atlas",
+      "size_bytes": 469,
+      "sha256": "8d6685aba6af95ca977333aea26e0a56dcbed7b15cf98b43be991a820b0d4980"
+    },
+    {
+      "path": "web-sdk-integration/apps/sewer-surge/static/assets/spines/fsIntro/fs_screen.json",
+      "size_bytes": 5335,
+      "sha256": "7eaa18fd44aeb9f5c3148049bb68400cb452d1e753df8bda90967ac21d863bf9"
+    },
+    {
+      "path": "web-sdk-integration/apps/sewer-surge/static/assets/spines/fsIntro/fs_screen.png",
+      "size_bytes": 661596,
+      "sha256": "3df7419244d0af05c03f5e0e43df27235249e65608a173cac83fa5f20bd54a52"
+    },
+    {
+      "path": "web-sdk-integration/apps/sewer-surge/static/assets/spines/fsIntro/fs_screen.webp",
+      "size_bytes": 201162,
+      "sha256": "4f7dda1240e2bcf03ebfca44723183e915580965517245efe84e72c854fe8e9c"
+    },
+    {
+      "path": "web-sdk-integration/apps/sewer-surge/static/assets/spines/fsIntro/fs_screen_number.json",
+      "size_bytes": 2647,
+      "sha256": "2b5d98df4c6d94f530b90b7f56c3e4a6d539cee31edaecbe462fea521048c282"
+    },
+    {
+      "path": "web-sdk-integration/apps/sewer-surge/static/assets/spines/fsIntro/fs_total_number.json",
+      "size_bytes": 1200,
+      "sha256": "0de2e04942c0e1d53f15a8667cd61c1385017069172eee92eeab3fad2da24341"
+    },
+    {
+      "path": "web-sdk-integration/apps/sewer-surge/static/assets/spines/fsIntro/index.ts",
+      "size_bytes": 381,
+      "sha256": "bb744925167f2c8868ef9a221783c940f698767e4925fbc3f3582963fc1c7fdd"
+    },
+    {
+      "path": "web-sdk-integration/apps/sewer-surge/static/assets/spines/globalMultiplier/index.ts",
+      "size_bytes": 221,
+      "sha256": "d7b99b912e8c693a4585c049299cde545ed79b928551481943147337c182e967"
+    },
+    {
+      "path": "web-sdk-integration/apps/sewer-surge/static/assets/spines/globalMultiplier/multiframe.atlas",
+      "size_bytes": 345,
+      "sha256": "d6153db9f5c001a1d7135cbd4802d6d81af14b97c499ccac38b48ec9e1fd6eac"
+    },
+    {
+      "path": "web-sdk-integration/apps/sewer-surge/static/assets/spines/globalMultiplier/multiframe.json",
+      "size_bytes": 16877,
+      "sha256": "59e83ca35fc63d65e6be274d810ce45f7dcceb3197a80a71f57cfe6ef02c8805"
+    },
+    {
+      "path": "web-sdk-integration/apps/sewer-surge/static/assets/spines/globalMultiplier/multiframe.png",
+      "size_bytes": 61692,
+      "sha256": "982ce9a21cf560ea482c49245d2e635b3b8953829b05e844eff6dc59676a80b7"
+    },
+    {
+      "path": "web-sdk-integration/apps/sewer-surge/static/assets/spines/globalMultiplier/multiframe.webp",
+      "size_bytes": 17000,
+      "sha256": "b00300fd0d78c658b41598432edfd95489c9f286acf6445ae9230820aba3cc50"
+    },
+    {
+      "path": "web-sdk-integration/apps/sewer-surge/static/assets/spines/loader/index.ts",
+      "size_bytes": 224,
+      "sha256": "a72e0d6bf72d83d6843942fe99197bb621064c206c8818db6e41feb9f4cc64bd"
+    },
+    {
+      "path": "web-sdk-integration/apps/sewer-surge/static/assets/spines/loader/loader.atlas",
+      "size_bytes": 2655,
+      "sha256": "165d9652ff59669c191bae1702fb847675232c613e55d68c564adf7c98d666a1"
+    },
+    {
+      "path": "web-sdk-integration/apps/sewer-surge/static/assets/spines/loader/loader.json",
+      "size_bytes": 97450,
+      "sha256": "1bd25d9bbdf5d7b635a768f402e212f50feae704eaff6965cccfd0c10d6fc682"
+    },
+    {
+      "path": "web-sdk-integration/apps/sewer-surge/static/assets/spines/loader/loader.png",
+      "size_bytes": 2228918,
+      "sha256": "066cf86d376c43b7e7d10fc9caa267ace57811e1509c422850680a662f517ce8"
+    },
+    {
+      "path": "web-sdk-integration/apps/sewer-surge/static/assets/spines/loader/loader.webp",
+      "size_bytes": 519116,
+      "sha256": "690dc2d75574c91dd767a48815d51589dd3e81423b33e2dffab1851278fbc78d"
+    },
+    {
+      "path": "web-sdk-integration/apps/sewer-surge/static/assets/spines/reelhouse/index.ts",
+      "size_bytes": 233,
+      "sha256": "fed096653adb435bb65c03670394713631c8e29f0cf14067c85bcb3e965848e9"
+    },
+    {
+      "path": "web-sdk-integration/apps/sewer-surge/static/assets/spines/reelhouse/reelhouse_glow.atlas",
+      "size_bytes": 242,
+      "sha256": "8331c8c2cb9a02e059ce4847b414fc8d1579cef07135a1b14ac9baae72768869"
+    },
+    {
+      "path": "web-sdk-integration/apps/sewer-surge/static/assets/spines/reelhouse/reelhouse_glow.json",
+      "size_bytes": 351153,
+      "sha256": "d7a81eb9b87f36496b1890191fe0d0dc8bb84c99c16437821b75bf01a31df4aa"
+    },
+    {
+      "path": "web-sdk-integration/apps/sewer-surge/static/assets/spines/reelhouse/reelhouse_glow.png",
+      "size_bytes": 184675,
+      "sha256": "a65a1049d534346043de9a9d12b6dc6ca1dcfac9d03d345c80581a1e0470a51e"
+    },
+    {
+      "path": "web-sdk-integration/apps/sewer-surge/static/assets/spines/reelhouse/reelhouse_glow.webp",
+      "size_bytes": 58184,
+      "sha256": "4b700a156c84943f25303e41e519739391ae47a4e4afa3c10f229907d3352813"
+    },
+    {
+      "path": "web-sdk-integration/apps/sewer-surge/static/assets/spines/symbols/h1.json",
+      "size_bytes": 66036,
+      "sha256": "6d57a92f8a7a8358967d14c4a0d636195afd9935e2fc49177bb5cb91e5c3c53f"
+    },
+    {
+      "path": "web-sdk-integration/apps/sewer-surge/static/assets/spines/symbols/h2.json",
+      "size_bytes": 81935,
+      "sha256": "fc2869d9d2563714c189ea91a63f7c995efc50b94f1d4fb75c8a43414495d5be"
+    },
+    {
+      "path": "web-sdk-integration/apps/sewer-surge/static/assets/spines/symbols/h3.json",
+      "size_bytes": 37884,
+      "sha256": "85a09833a4613daf9b9b9e034c9b523cada86b6bd17600d1c8e93404db532714"
+    },
+    {
+      "path": "web-sdk-integration/apps/sewer-surge/static/assets/spines/symbols/h4.json",
+      "size_bytes": 32762,
+      "sha256": "411d0dbde604abacf0b2755d73ebbec9e342f10f18855707a57f361ff178529a"
+    },
+    {
+      "path": "web-sdk-integration/apps/sewer-surge/static/assets/spines/symbols/h5.json",
+      "size_bytes": 35346,
+      "sha256": "041517c5acea329a5a195fceac916b31026f84fd91ed7a0d9e000247c1f768bf"
+    },
+    {
+      "path": "web-sdk-integration/apps/sewer-surge/static/assets/spines/symbols/index.ts",
+      "size_bytes": 493,
+      "sha256": "2245947caf963fb47af026084a09634c20e0c6f7843d4396bbc64b12e1fc1131"
+    },
+    {
+      "path": "web-sdk-integration/apps/sewer-surge/static/assets/spines/symbols/l1.json",
+      "size_bytes": 28671,
+      "sha256": "abf7a6e5db0e4fed4c72769f0ee997feb33d64c8884c27fef532169c310fc9d0"
+    },
+    {
+      "path": "web-sdk-integration/apps/sewer-surge/static/assets/spines/symbols/l2.json",
+      "size_bytes": 35141,
+      "sha256": "1dcc671e3ea07a68cec4bed13b1a100bbc85218e11fb90cce5b303789cbbd048"
+    },
+    {
+      "path": "web-sdk-integration/apps/sewer-surge/static/assets/spines/symbols/l3.json",
+      "size_bytes": 34763,
+      "sha256": "e27e6286efce15cab0bae56717abc0a76a6073c4b507a8a9a5cc4f574d5a6936"
+    },
+    {
+      "path": "web-sdk-integration/apps/sewer-surge/static/assets/spines/symbols/l4.json",
+      "size_bytes": 27192,
+      "sha256": "5ecbad22022f10712b5497f594cefe7fcbb3a01b56e48de774e975bf3a4aaa70"
+    },
+    {
+      "path": "web-sdk-integration/apps/sewer-surge/static/assets/spines/symbols/symbols.atlas",
+      "size_bytes": 2766,
+      "sha256": "8790b152560dd753efb151f0cfd497dd58edbe5dda2254bd9aa2b508cea3f132"
+    },
+    {
+      "path": "web-sdk-integration/apps/sewer-surge/static/assets/spines/symbols/symbols.png",
+      "size_bytes": 1059912,
+      "sha256": "32ba3abb3d76eb7a1ff993aa837f0d70a8c5d40782ef478d9614b9af5d04b280"
+    },
+    {
+      "path": "web-sdk-integration/apps/sewer-surge/static/assets/spines/symbols/symbols.webp",
+      "size_bytes": 736516,
+      "sha256": "aa59de6d53532a7465a9562d2a93ef091d7ed481e4bcdd705814415df8fc8234"
+    },
+    {
+      "path": "web-sdk-integration/apps/sewer-surge/static/assets/spines/symbols2/M.json",
+      "size_bytes": 150505,
+      "sha256": "4fa0020513120ac650f153086bd88d28cfde98d1941d670d7a1f924d0aa4946d"
+    },
+    {
+      "path": "web-sdk-integration/apps/sewer-surge/static/assets/spines/symbols2/S.json",
+      "size_bytes": 83113,
+      "sha256": "1852c7728a571712a71df45f1a3d7d06432d98b03f66762a48dac5d3778b2b34"
+    },
+    {
+      "path": "web-sdk-integration/apps/sewer-surge/static/assets/spines/symbols2/index.ts",
+      "size_bytes": 252,
+      "sha256": "f916653cd8849ede3a7536d8064c55c4cb37fb56e9da314c96ec2730485c1912"
+    },
+    {
+      "path": "web-sdk-integration/apps/sewer-surge/static/assets/spines/symbols2/symbols2.atlas",
+      "size_bytes": 11413,
+      "sha256": "91f03f71b263e06875e749728789efc73a69f3a66fa8edd96f442e0b3263160b"
+    },
+    {
+      "path": "web-sdk-integration/apps/sewer-surge/static/assets/spines/symbols2/symbols2.png",
+      "size_bytes": 2945874,
+      "sha256": "2c14c2e490103d76ce53310d7d9d3849ea2d5cbdd7e34cb5f9a19283267e2aa5"
+    },
+    {
+      "path": "web-sdk-integration/apps/sewer-surge/static/assets/spines/symbols2/symbols2.webp",
+      "size_bytes": 726960,
+      "sha256": "66b7680076f008c2654982a12cdcddb6a154ac183ec7611526a3fc1356e6b8ee"
+    },
+    {
+      "path": "web-sdk-integration/apps/sewer-surge/static/assets/spines/symbols3/W.json",
+      "size_bytes": 86701,
+      "sha256": "7ee7f7862fa6ad8cfe6206279e7a4dfa918611b66968fa041167a9d2fc984c64"
+    },
+    {
+      "path": "web-sdk-integration/apps/sewer-surge/static/assets/spines/symbols3/explosion.json",
+      "size_bytes": 747,
+      "sha256": "87735051a54b873ca370f67cf742a8dd65892a483662bba2a05b59eb3b13abda"
+    },
+    {
+      "path": "web-sdk-integration/apps/sewer-surge/static/assets/spines/symbols3/index.ts",
+      "size_bytes": 276,
+      "sha256": "ef6aa799249309511b1441fc8066bb30279a60f30016639cb0777cd7b87ad1cb"
+    },
+    {
+      "path": "web-sdk-integration/apps/sewer-surge/static/assets/spines/symbols3/symbols3.atlas",
+      "size_bytes": 2008,
+      "sha256": "98bd33fcf0d8d3d1a29fdf992543737e4aa107e75c37985d0f248c3ea99f542a"
+    },
+    {
+      "path": "web-sdk-integration/apps/sewer-surge/static/assets/spines/symbols3/symbols3.png",
+      "size_bytes": 2496020,
+      "sha256": "9b696fb6d0974a15ce031368e6a45a67cc776a9b7f4ab8c723e4406c38d79cbc"
+    },
+    {
+      "path": "web-sdk-integration/apps/sewer-surge/static/assets/spines/symbols3/symbols3.webp",
+      "size_bytes": 662558,
+      "sha256": "729a5b7d4e1be6959135ea410b565c008ea89f13a918e5c1e91a16d1b7ccaa29"
+    },
+    {
+      "path": "web-sdk-integration/apps/sewer-surge/static/assets/spines/transition/index.ts",
+      "size_bytes": 221,
+      "sha256": "57dbc4f88be10e78978b6a43283a1fcc9dbba674406b3435c0f54ef4e618e778"
+    },
+    {
+      "path": "web-sdk-integration/apps/sewer-surge/static/assets/spines/transition/transition.atlas",
+      "size_bytes": 760,
+      "sha256": "93c0b93da860911ac4ec51b57df298cbd319172bf706449ab49dd89cd6f203ad"
+    },
+    {
+      "path": "web-sdk-integration/apps/sewer-surge/static/assets/spines/transition/transition.json",
+      "size_bytes": 12122,
+      "sha256": "ac64bd6919679a3f1afc17f2c116e6995fc4937b753596637264d3d12587e253"
+    },
+    {
+      "path": "web-sdk-integration/apps/sewer-surge/static/assets/spines/transition/transition.png",
+      "size_bytes": 1510618,
+      "sha256": "6e3208ef1e7946e08bd901455747209119f21cdbf2cdca92e1ecdc38364049cb"
+    },
+    {
+      "path": "web-sdk-integration/apps/sewer-surge/static/assets/spines/transition/transition.webp",
+      "size_bytes": 368332,
+      "sha256": "2841884a5be5e77e552143e5b916f7064b89411e82f78c5f06fb47efcd04c010"
+    },
+    {
+      "path": "web-sdk-integration/apps/sewer-surge/static/assets/spines/tumbleWin/index.ts",
+      "size_bytes": 330,
+      "sha256": "8374a121cc3817b06671a4b6b75470776b89988227dad5ed6484f4c456014aa3"
+    },
+    {
+      "path": "web-sdk-integration/apps/sewer-surge/static/assets/spines/tumbleWin/tumble_multiplier.json",
+      "size_bytes": 3874,
+      "sha256": "88dbd60a4379edcf35d5cca964745011cbf153a7ba3afb74cde60d4a1e6415e3"
+    },
+    {
+      "path": "web-sdk-integration/apps/sewer-surge/static/assets/spines/tumbleWin/tumble_win.atlas",
+      "size_bytes": 1158,
+      "sha256": "a045aeafde8eef7bf77d121e7cbe813240411fe37c5bb5cb49dbcea6353664e3"
+    },
+    {
+      "path": "web-sdk-integration/apps/sewer-surge/static/assets/spines/tumbleWin/tumble_win.json",
+      "size_bytes": 1703,
+      "sha256": "1d22106ac882af8c6b7502313037729fcadf5c2b2c9c3e5cd6081b835f05f339"
+    },
+    {
+      "path": "web-sdk-integration/apps/sewer-surge/static/assets/spines/tumbleWin/tumble_win.png",
+      "size_bytes": 1043609,
+      "sha256": "3ca67b090ab3f69a7c83213e0b20c3dcf6803a6d8475e04ad8a8cbc065e00ee8"
+    },
+    {
+      "path": "web-sdk-integration/apps/sewer-surge/static/assets/spines/tumbleWin/tumble_win.webp",
+      "size_bytes": 313500,
+      "sha256": "f9ed1bab2906e95cf3890462e3869915d7fcc6287ff69700c5da3df78ab877a2"
+    },
+    {
+      "path": "web-sdk-integration/apps/sewer-surge/static/assets/spines/winMeterExplosion/index.ts",
+      "size_bytes": 227,
+      "sha256": "4a938e916375a85a366fb9d9951a1137a199436c3bcddfca05dab285884979da"
+    },
+    {
+      "path": "web-sdk-integration/apps/sewer-surge/static/assets/spines/winMeterExplosion/ui_explosion.atlas",
+      "size_bytes": 1126,
+      "sha256": "8ee345feca26b4acef56feef2a857578cba96ae44f3eb16dedb21b23c067f772"
+    },
+    {
+      "path": "web-sdk-integration/apps/sewer-surge/static/assets/spines/winMeterExplosion/ui_explosion.json",
+      "size_bytes": 683,
+      "sha256": "d1ef126bb3e66b2b365a8864f71d43f60662318b98b0784aa2d9ddeae5b89f17"
+    },
+    {
+      "path": "web-sdk-integration/apps/sewer-surge/static/assets/spines/winMeterExplosion/ui_explosion.png",
+      "size_bytes": 631118,
+      "sha256": "525160b54095098ac422b73c9597d13f01e5e2829a3ccaeb964cd5dc6b15122f"
+    },
+    {
+      "path": "web-sdk-integration/apps/sewer-surge/static/assets/sprites/coin/SD2_Coin.json",
+      "size_bytes": 2655,
+      "sha256": "7b50573224a005f3e27d6654bfd195485bcc2bf0678cf8bcff7d2887813d7d7a"
+    },
+    {
+      "path": "web-sdk-integration/apps/sewer-surge/static/assets/sprites/coin/SD2_Coin.png",
+      "size_bytes": 2495661,
+      "sha256": "dc96a0c37d8ff0d6001bd50220b618100039d4b24edf8a7d7398ec5028aa7e32"
+    },
+    {
+      "path": "web-sdk-integration/apps/sewer-surge/static/assets/sprites/freeSpins/freeSpins.json",
+      "size_bytes": 3802,
+      "sha256": "81cb7b522edfd101b7ee37d02ce62374b47fd133b113c0e7f68a08348dee6ae6"
+    },
+    {
+      "path": "web-sdk-integration/apps/sewer-surge/static/assets/sprites/freeSpins/freeSpins.png",
+      "size_bytes": 1191193,
+      "sha256": "070a151ceca8a26791cf3c3d3bce28e239878c45bed5a3ddd70b0667149656d8"
+    },
+    {
+      "path": "web-sdk-integration/apps/sewer-surge/static/assets/sprites/freeSpins/freeSpins.webp",
+      "size_bytes": 323194,
+      "sha256": "ff1f5f81e6772bbe31dbf183ddd581e66dbd7ffce571ec2a0a41df2b6226c608"
+    },
+    {
+      "path": "web-sdk-integration/apps/sewer-surge/static/assets/sprites/freeSpins/index.ts",
+      "size_bytes": 162,
+      "sha256": "f1ef0cbf760ad5561489015cef50ba78332ccafab91ad7749b246c2d8112ad84"
+    },
+    {
+      "path": "web-sdk-integration/apps/sewer-surge/static/assets/sprites/payFrame/index.ts",
+      "size_bytes": 116,
+      "sha256": "eadd8a92b4feabebf64feb39c9e832c0c30b4909dba2855b003ed94121433fd2"
+    },
+    {
+      "path": "web-sdk-integration/apps/sewer-surge/static/assets/sprites/payFrame/payFrame.png",
+      "size_bytes": 394943,
+      "sha256": "95c6cdadc0bfe2f5d0e3d80c298232c35b85cd986540a85e011249e4300bec8b"
+    },
+    {
+      "path": "web-sdk-integration/apps/sewer-surge/static/assets/sprites/pressToContinueText/MM_pressanywhere.json",
+      "size_bytes": 3600,
+      "sha256": "501c816a080ae4b05933a3e399f230f459c9481caf813c734df83a549034ca0e"
+    },
+    {
+      "path": "web-sdk-integration/apps/sewer-surge/static/assets/sprites/pressToContinueText/MM_pressanywhere.png",
+      "size_bytes": 111217,
+      "sha256": "022acd0a59306cf889d10f882b955091b9e03242a7690d3bea0e16ddc5059b0c"
+    },
+    {
+      "path": "web-sdk-integration/apps/sewer-surge/static/assets/sprites/pressToContinueText/MM_pressanywhere.webp",
+      "size_bytes": 47404,
+      "sha256": "ce1332e17a008ccb02bd15387ea84db5d8d3b7338d29ac45598a65d398168d16"
+    },
+    {
+      "path": "web-sdk-integration/apps/sewer-surge/static/assets/sprites/pressToContinueText/index.ts",
+      "size_bytes": 176,
+      "sha256": "cac52dbd5c974d38304cc2429e1478d03def7a1ff1a92ec77e5386ba73f4a90b"
+    },
+    {
+      "path": "web-sdk-integration/apps/sewer-surge/static/assets/sprites/progressBar/index.ts",
+      "size_bytes": 181,
+      "sha256": "1c872b9ea3f615eb6b02e6686ae7fa28ef70331aa154c3d9ce832e211712b4b6"
+    },
+    {
+      "path": "web-sdk-integration/apps/sewer-surge/static/assets/sprites/progressBar/progressBar.json",
+      "size_bytes": 918,
+      "sha256": "b585423339d4b2e352024b7224f7b1573444e74df771741d7b40e215a94a66a8"
+    },
+    {
+      "path": "web-sdk-integration/apps/sewer-surge/static/assets/sprites/progressBar/progressBar.png",
+      "size_bytes": 44235,
+      "sha256": "645cd5dd43a500450da07bb2ef231beed325601ac4f2526e17804dccb40213a1"
+    },
+    {
+      "path": "web-sdk-integration/apps/sewer-surge/static/assets/sprites/progressBar/progressBar.webp",
+      "size_bytes": 12010,
+      "sha256": "ad6d3f4f13dfed6e724e908c9745268c44eb8b44eb3d33afc8ca56b0da329cef"
+    },
+    {
+      "path": "web-sdk-integration/apps/sewer-surge/static/assets/sprites/reelsFrame/index.ts",
+      "size_bytes": 166,
+      "sha256": "1d3c2902cfae689ec7e92ed6def29711f5683004673cecd91d1a0abb4a5d29b9"
+    },
+    {
+      "path": "web-sdk-integration/apps/sewer-surge/static/assets/sprites/reelsFrame/reels_frame.json",
+      "size_bytes": 1889,
+      "sha256": "1f225d462f79e3b9cd217222aafe8ee478bbf6b2415b4f0be5b5d1e54b0dea51"
+    },
+    {
+      "path": "web-sdk-integration/apps/sewer-surge/static/assets/sprites/reelsFrame/reels_frame.png",
+      "size_bytes": 732330,
+      "sha256": "cfc63f24c79f85582b0204e28d60942b3d54a9746514302e05b9f7f8055b7a38"
+    },
+    {
+      "path": "web-sdk-integration/apps/sewer-surge/static/assets/sprites/symbolsStatic/index.ts",
+      "size_bytes": 170,
+      "sha256": "84926e26e40e56d3fb0881b6b999fc3f11bbbcf787bec0bd37547d76a0a0dee4"
+    },
+    {
+      "path": "web-sdk-integration/apps/sewer-surge/static/assets/sprites/symbolsStatic/symbolsStatic.json",
+      "size_bytes": 3947,
+      "sha256": "fafe606755c2f9f67ebac87a0d285b82f43efce94084c782ffed6f738b63609c"
+    },
+    {
+      "path": "web-sdk-integration/apps/sewer-surge/static/assets/sprites/symbolsStatic/symbolsStatic.png",
+      "size_bytes": 898750,
+      "sha256": "24678af0caa9a17add1a30d5522eea78b27f29ae02cf3a949da97d855820eb72"
+    },
+    {
+      "path": "web-sdk-integration/apps/sewer-surge/static/assets/sprites/symbolsStatic/symbolsStatic.webp",
+      "size_bytes": 628678,
+      "sha256": "def5848f4bf679ccd1d8f7a9354e26b88d3dd49709e30e5e633bafc8bac52bf2"
+    },
+    {
+      "path": "web-sdk-integration/apps/sewer-surge/static/assets/sprites/uiSlotsAssetsBespoke/autospin_active.png",
+      "size_bytes": 5724,
+      "sha256": "bc8b827d01ff23d0494ed8638f36465a353db57cd84cfcaa9f03e57f065e72b0"
+    },
+    {
+      "path": "web-sdk-integration/apps/sewer-surge/static/assets/sprites/uiSlotsAssetsBespoke/autospin_active.webp",
+      "size_bytes": 28774,
+      "sha256": "6fc382da0cc173956cd95b738f8b169b9173eac325e853d4fa3158e99de69b1c"
+    },
+    {
+      "path": "web-sdk-integration/apps/sewer-surge/static/assets/sprites/uiSlotsAssetsBespoke/autospin_active_hover.png",
+      "size_bytes": 5315,
+      "sha256": "ba453f62c46bcb43ff13f6667ffc1e6ef9ba5aa00841b210e6474f367e1181ac"
+    },
+    {
+      "path": "web-sdk-integration/apps/sewer-surge/static/assets/sprites/uiSlotsAssetsBespoke/autospin_active_hover.webp",
+      "size_bytes": 28500,
+      "sha256": "dfa3eb718b3361c0448bcc502e15e212b8cd1a181e0d00734e9f72a92ca27bf0"
+    },
+    {
+      "path": "web-sdk-integration/apps/sewer-surge/static/assets/sprites/uiSlotsAssetsBespoke/index.ts",
+      "size_bytes": 432,
+      "sha256": "64e60b3c0a531260738634cb325209fcad243893db2eb5eae443b9ba60623b0c"
+    },
+    {
+      "path": "web-sdk-integration/apps/sewer-surge/static/assets/sprites/uiSlotsAssetsBespoke/turbo_active.png",
+      "size_bytes": 4892,
+      "sha256": "992f42462b5d5b93375423f63cca2d977f0807d413ffef6a6ba962b6485b9a94"
+    },
+    {
+      "path": "web-sdk-integration/apps/sewer-surge/static/assets/sprites/uiSlotsAssetsBespoke/turbo_active.webp",
+      "size_bytes": 28492,
+      "sha256": "95e1ec1e73577c9e63ddd27b3012689ba568cbf18ac6b9d69c6739d6dea09aae"
+    },
+    {
+      "path": "web-sdk-integration/apps/sewer-surge/static/assets/sprites/uiSlotsAssetsBespoke/turbo_active_hover.png",
+      "size_bytes": 4555,
+      "sha256": "c062c89470388e0b928eadce93f2f12da07a82e4f1aaf385aa695503ca619f42"
+    },
+    {
+      "path": "web-sdk-integration/apps/sewer-surge/static/assets/sprites/uiSlotsAssetsBespoke/turbo_active_hover.webp",
+      "size_bytes": 28322,
+      "sha256": "164d043637a1a88b299061df31c95c5901b02d06dba2d64098a63eba4e701bd1"
+    },
+    {
+      "path": "web-sdk-integration/apps/sewer-surge/static/assets/sprites/winSmall/MM_Localisation_winsmall.json",
+      "size_bytes": 3571,
+      "sha256": "38596339bfbe391b8804dc1d171eadbdb5bb1454e5ff24031c82598f2ea6b699"
+    },
+    {
+      "path": "web-sdk-integration/apps/sewer-surge/static/assets/sprites/winSmall/MM_Localisation_winsmall.png",
+      "size_bytes": 405930,
+      "sha256": "2418ea09a9d61463c89d30d489fc07ece67480e6fa5eea6f8a358090de3ec8b1"
+    },
+    {
+      "path": "web-sdk-integration/apps/sewer-surge/static/assets/sprites/winSmall/MM_Localisation_winsmall.webp",
+      "size_bytes": 118312,
+      "sha256": "b9e4ea52bb9808607c695c36b70defef922dcdd58e3895dbedc021057700f9ef"
+    },
+    {
+      "path": "web-sdk-integration/apps/sewer-surge/static/assets/sprites/winSmall/index.ts",
+      "size_bytes": 192,
+      "sha256": "124ee18d322fb23140ffac87a306cb5f3749735af2a735c19af1b70ab73b4605"
+    },
+    {
+      "path": "web-sdk-integration/apps/sewer-surge/static/favicon.svg",
+      "size_bytes": 2406,
+      "sha256": "0000d803c4d4c0763b492cb7f7239f63356977530b76c20c190c6e435f58207e"
+    },
+    {
+      "path": "web-sdk-integration/apps/sewer-surge/static/loader.gif",
+      "size_bytes": 78513,
+      "sha256": "298a7a5799f3ab78a95d37c8bde5c3f1ba63959e726f9f5733f73dc708f7fd24"
+    },
+    {
+      "path": "web-sdk-integration/apps/sewer-surge/static/stake-engine-loader.gif",
+      "size_bytes": 1297992,
+      "sha256": "ac3511a4856a2a50a058185834dc4ee70c56afbd38756c5a8cc815441b4da082"
+    },
+    {
+      "path": "web-sdk-integration/apps/sewer-surge/svelte.config.js",
+      "size_bytes": 76,
+      "sha256": "a768ad85f62a58081d1f17ad8f0cb99a4a9082d52e95b42c27994b1dd79dbdd1"
+    },
+    {
+      "path": "web-sdk-integration/apps/sewer-surge/tests/sewerSurgeAdapter.test.mjs",
+      "size_bytes": 2688,
+      "sha256": "1fa52d3fda4c82a0d6614bc4d075bbc1bd597290e94428d7cc5d7e95eaba18e3"
+    },
+    {
+      "path": "web-sdk-integration/apps/sewer-surge/tsconfig.json",
+      "size_bytes": 104,
+      "sha256": "512ebae6e955a1b20e9687356a0280ef241fc12ac7e0e40957145adf30fcbc9e"
+    },
+    {
+      "path": "web-sdk-integration/apps/sewer-surge/vite.config.js",
+      "size_bytes": 74,
+      "sha256": "c46cb161e0bf50a89e925cb54385dee682bc54726850dc49a7ba277d1313a1d3"
+    },
+    {
+      "path": "web-sdk-integration/patches/bookEventHandlerMap.patch.txt",
+      "size_bytes": 1099,
+      "sha256": "104b26d5b8a66f0e231a21b49432408e18e0f304970c942cc387772c2a772439"
+    },
+    {
+      "path": "web-sdk-integration/patches/typesBookEvent.patch.txt",
+      "size_bytes": 1562,
+      "sha256": "7d12a70d93eae2440f4b89d581919da0f9f06eab9a9b6830d774dcec98d7d9fb"
+    },
+    {
+      "path": "web-sdk-integration/src/game/sewerSurgeAdapter.ts",
+      "size_bytes": 8463,
+      "sha256": "5c657499a68a59ab40488e0f956011c97c47a9fa616cf0db91fc28c4a0c7a47c"
+    }
+  ]
+}

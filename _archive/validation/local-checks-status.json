@@ -1,0 +1,11 @@
+{
+  "math_contract_and_tests_exit_code": 0,
+  "four_mode_debug_book_and_lut_audit_exit_code": 1,
+  "frontend_adapter_tests_exit_code": 1,
+  "frontend_adapter_typescript_exit_code": 0,
+  "win_component_script_typescript_exit_code": 2,
+  "standalone_frontend_tests_exit_code": 0,
+  "production_shell_script_syntax_exit_code": 0,
+  "python_syntax_exit_code": 0,
+  "note": "Local checks used an extracted SDK snapshot and zstandard import shim for tests; no Rust optimizer or production compressed run was performed."
+}

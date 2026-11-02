@@ -1,0 +1,5 @@
+=== SDK contract check (non-strict local snapshot mode) ===
+Sewer Surge SDK contract and optimizer input check passed.
+game_id=0_0_sewersurge; provider_name=KingWin; provider_number=0
+modes=base:1x, ante:3x, bonus:100x, super_bonus:500x
+Exact Git source/runtime commit check was not requested.

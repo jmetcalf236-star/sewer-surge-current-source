@@ -1,0 +1,112 @@
+[
+    {
+        "search": [
+            {
+                "name": "gametype",
+                "value": "basegame"
+            },
+            {
+                "name": "kind",
+                "value": "4"
+            },
+            {
+                "name": "sewerTier",
+                "value": "deep-run"
+            },
+            {
+                "name": "symbol",
+                "value": "scatter"
+            }
+        ],
+        "timesTriggered": 15,
+        "bookIds": [
+            0,
+            22,
+            25,
+            26,
+            35,
+            36,
+            45,
+            46,
+            53,
+            59,
+            66,
+            67,
+            87,
+            91,
+            95
+        ]
+    },
+    {
+        "search": [
+            {
+                "name": "gametype",
+                "value": "basegame"
+            },
+            {
+                "name": "kind",
+                "value": "3"
+            },
+            {
+                "name": "sewerTier",
+                "value": "bonus"
+            },
+            {
+                "name": "symbol",
+                "value": "scatter"
+            }
+        ],
+        "timesTriggered": 20,
+        "bookIds": [
+            1,
+            2,
+            3,
+            5,
+            6,
+            10,
+            15,
+            20,
+            21,
+            23,
+            39,
+            42,
+            43,
+            44,
+            62,
+            74,
+            77,
+            82,
+            85,
+            96
+        ]
+    },
+    {
+        "search": [
+            {
+                "name": "gametype",
+                "value": "basegame"
+            },
+            {
+                "name": "kind",
+                "value": "5"
+            },
+            {
+                "name": "sewerTier",
+                "value": "deep-run"
+            },
+            {
+                "name": "symbol",
+                "value": "scatter"
+            }
+        ],
+        "timesTriggered": 6,
+        "bookIds": [
+            27,
+            29,
+            57,
+            76,
+            80,
+            84
+        ]
+    }
+]

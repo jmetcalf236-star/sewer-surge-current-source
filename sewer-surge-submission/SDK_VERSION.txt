@@ -1,0 +1,9 @@
+EngineIO Math SDK repository: https://github.com/engineio/math-sdk
+Verified source commit: 6e0c69e3a4edc80ca7e59921e31167cb2ca83c59
+StakeEngine runtime commit: 0842bb244cb8c15e63af541054710a8082901e2f
+Production generation: 100,000 books per mode; four modes
+Audit: optimized math/LUT audit passed; 96.5% weighted RTP per mode;
+       50,000x maximum payout relative to base-game wager in every mode.
+
+The exact SDK source commit is checked out in the nested math-sdk repository.
+The generated v5 audit and release artifacts are staged under upload/math-v5.

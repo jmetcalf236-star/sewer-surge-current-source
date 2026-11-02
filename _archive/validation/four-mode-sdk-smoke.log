@@ -1,0 +1,109 @@
+
+Creating books...
+
+Creating books for 0_0_sewersurge in base
+Batch 1 of 1
+Thread 0 finished with 102.875 RTP. [baseGame: 102.875, freeGame: 0.0]
+Saving books for  0_0_sewersurge in base
+Saving force files for 0_0_sewersurge in base
+Saving LUTs for 0_0_sewersurge in base
+Wrote verification file: /mnt/data/_sewer_sdk_check/games/0_0_sewersurge/library/configs/books_base.verification.json
+
+Finished creating books in 0.07703661918640137 seconds.
+
+
+Creating books...
+
+Creating books for 0_0_sewersurge in ante
+Batch 1 of 1
+Thread 0 finished with 34.637 RTP. [baseGame: 34.637, freeGame: 0.0]
+Saving books for  0_0_sewersurge in ante
+Saving force files for 0_0_sewersurge in ante
+Saving LUTs for 0_0_sewersurge in ante
+Wrote verification file: /mnt/data/_sewer_sdk_check/games/0_0_sewersurge/library/configs/books_ante.verification.json
+
+Finished creating books in 0.07339191436767578 seconds.
+
+
+Creating books...
+
+Creating books for 0_0_sewersurge in bonus
+Batch 1 of 1
+Thread 0 finished with 1.965 RTP. [baseGame: 1.965, freeGame: 0.0]
+Saving books for  0_0_sewersurge in bonus
+Saving force files for 0_0_sewersurge in bonus
+Saving LUTs for 0_0_sewersurge in bonus
+Wrote verification file: /mnt/data/_sewer_sdk_check/games/0_0_sewersurge/library/configs/books_bonus.verification.json
+
+Finished creating books in 0.0878288745880127 seconds.
+
+
+Creating books...
+
+Creating books for 0_0_sewersurge in super_bonus
+Batch 1 of 1
+Thread 0 finished with 1.155 RTP. [baseGame: 1.155, freeGame: 0.0]
+/mnt/data/_sewer_sdk_check/utils/rgs_verification.py:195: UserWarning: 
+Mode [base] fails 3-star volatility limits:
+
+  warnings.warn(f"\nMode [{name}] fails 3-star volatility limits:\n")
+/mnt/data/_sewer_sdk_check/utils/rgs_verification.py:195: UserWarning: 
+Mode [ante] fails 3-star volatility limits:
+
+  warnings.warn(f"\nMode [{name}] fails 3-star volatility limits:\n")
+/mnt/data/_sewer_sdk_check/utils/rgs_verification.py:195: UserWarning: 
+Mode [bonus] fails 3-star volatility limits:
+
+  warnings.warn(f"\nMode [{name}] fails 3-star volatility limits:\n")
+/mnt/data/_sewer_sdk_check/utils/rgs_verification.py:195: UserWarning: 
+Mode [super_bonus] fails 3-star volatility limits:
+
+  warnings.warn(f"\nMode [{name}] fails 3-star volatility limits:\n")
+/mnt/data/_sewer_sdk_check/utils/rgs_verification.py:305: UserWarning: 
+
+Mode RTP difference exceedes allowed difference for approvals: 101.72
+
+  warnings.warn(f"\n\nMode RTP difference exceedes allowed difference for approvals: {max_rtp_diff}\n")
+Saving books for  0_0_sewersurge in super_bonus
+Saving force files for 0_0_sewersurge in super_bonus
+Saving LUTs for 0_0_sewersurge in super_bonus
+Wrote verification file: /mnt/data/_sewer_sdk_check/games/0_0_sewersurge/library/configs/books_super_bonus.verification.json
+
+Finished creating books in 0.14919328689575195 seconds.
+
+[FAST PATH] Using verification sidecar for base
+[FAST PATH] base: SHA-256 OK, payout hash OK, entries=100
+	VIOLATED: prob10k  VALUE:0.01 --- LIMIT: 0.005
+	VIOLATED: etl40b  VALUE:100.0 --- LIMIT: 0.9
+	VIOLATED: etl10k  VALUE:100.0 --- LIMIT: 0.8
+	VIOLATED: cvar  VALUE:10000.0 --- LIMIT: 800
+	VIOLATED: rtp  VALUE:102.875 --- LIMIT: 0.967
+
+
+
+[FAST PATH] Using verification sidecar for ante
+[FAST PATH] ante: SHA-256 OK, payout hash OK, entries=100
+	VIOLATED: prob10k  VALUE:0.01 --- LIMIT: 0.005
+	VIOLATED: etl40b  VALUE:100.0 --- LIMIT: 0.9
+	VIOLATED: etl10k  VALUE:100.0 --- LIMIT: 0.8
+	VIOLATED: cvar  VALUE:3333.3333 --- LIMIT: 800
+	VIOLATED: rtp  VALUE:34.6373 --- LIMIT: 0.967
+
+
+
+[FAST PATH] Using verification sidecar for bonus
+[FAST PATH] bonus: SHA-256 OK, payout hash OK, entries=100
+	VIOLATED: prob10k  VALUE:0.01 --- LIMIT: 0.005
+	VIOLATED: etl40b  VALUE:100.0 --- LIMIT: 0.9
+	VIOLATED: etl10k  VALUE:100.0 --- LIMIT: 0.8
+	VIOLATED: rtp  VALUE:1.965 --- LIMIT: 0.967
+
+
+
+[FAST PATH] Using verification sidecar for super_bonus
+[FAST PATH] super_bonus: SHA-256 OK, payout hash OK, entries=100
+	VIOLATED: etl10k  VALUE:100.0 --- LIMIT: 0.8
+	VIOLATED: rtp  VALUE:1.155 --- LIMIT: 0.967
+
+
+

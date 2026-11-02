@@ -1,0 +1,98 @@
+
+> sewer-surge@0.1.0 test
+> node --test src/**/*.test.js
+
+TAP version 13
+# Subtest: RGS adapter converts SDK integer-cent payout to multiplier
+ok 1 - RGS adapter converts SDK integer-cent payout to multiplier
+  ---
+  duration_ms: 1.351755
+  type: 'test'
+  ...
+# Subtest: RGS adapter rejects payout disagreement between award and final event
+ok 2 - RGS adapter rejects payout disagreement between award and final event
+  ---
+  duration_ms: 2.224573
+  type: 'test'
+  ...
+# Subtest: RGS adapter rejects a server board whose inlet pipe has no west opening
+ok 3 - RGS adapter rejects a server board whose inlet pipe has no west opening
+  ---
+  duration_ms: 0.230015
+  type: 'test'
+  ...
+# Subtest: rotation turns openings clockwise
+ok 4 - rotation turns openings clockwise
+  ---
+  duration_ms: 2.255845
+  type: 'test'
+  ...
+# Subtest: straight row reaches the outlet
+ok 5 - straight row reaches the outlet
+  ---
+  duration_ms: 0.616588
+  type: 'test'
+  ...
+# Subtest: eastbound route validator detects an impossible board
+ok 6 - eastbound route validator detects an impossible board
+  ---
+  duration_ms: 0.384709
+  type: 'test'
+  ...
+# Subtest: dead end when the next pipe does not connect
+ok 7 - dead end when the next pipe does not connect
+  ---
+  duration_ms: 0.144335
+  type: 'test'
+  ...
+# Subtest: inlet tile must accept water from the west
+ok 8 - inlet tile must accept water from the west
+  ---
+  duration_ms: 0.171685
+  type: 'test'
+  ...
+# Subtest: junction picks change the route but never the payout
+ok 9 - junction picks change the route but never the payout
+  ---
+  duration_ms: 0.900103
+  type: 'test'
+  ...
+# Subtest: scatter thresholds 0-2, 3, 4, 5+
+ok 10 - scatter thresholds 0-2, 3, 4, 5+
+  ---
+  duration_ms: 0.215904
+  type: 'test'
+  ...
+# Subtest: malformed rounds are rejected
+ok 11 - malformed rounds are rejected
+  ---
+  duration_ms: 1.253786
+  type: 'test'
+  ...
+# Subtest: local pipe rotation and branch choices never change fixed payout
+ok 12 - local pipe rotation and branch choices never change fixed payout
+  ---
+  duration_ms: 0.617763
+  type: 'test'
+  ...
+# Subtest: same seed gives the same round (replay)
+ok 13 - same seed gives the same round (replay)
+  ---
+  duration_ms: 0.634708
+  type: 'test'
+  ...
+# Subtest: rejects an inlet tile that does not expose its west port
+ok 14 - rejects an inlet tile that does not expose its west port
+  ---
+  duration_ms: 0.547038
+  type: 'test'
+  ...
+1..14
+# tests 14
+# suites 0
+# pass 14
+# fail 0
+# cancelled 0
+# skipped 0
+# todo 0
+# duration_ms 94.223108
