@@ -1,0 +1,99 @@
+{
+    "providerName": "KingWin",
+    "gameName": "sewer_surge",
+    "gameID": "0_0_sewersurge",
+    "rtp": 0.965,
+    "numReels": 5,
+    "numRows": [
+        5,
+        5,
+        5,
+        5,
+        5
+    ],
+    "betModes": {
+        "base": {
+            "cost": 1.0,
+            "feature": true,
+            "buyBonus": false,
+            "rtp": 0.965,
+            "max_win": 50000.0
+        },
+        "ante": {
+            "cost": 3.0,
+            "feature": true,
+            "buyBonus": false,
+            "rtp": 0.965,
+            "max_win": 50000.0
+        },
+        "bonus": {
+            "cost": 100.0,
+            "feature": false,
+            "buyBonus": true,
+            "rtp": 0.965,
+            "max_win": 50000.0
+        },
+        "super_bonus": {
+            "cost": 500.0,
+            "feature": false,
+            "buyBonus": true,
+            "rtp": 0.965,
+            "max_win": 50000.0
+        }
+    },
+    "symbols": [
+        {
+            "X": {
+                "paytable": [
+                    {
+                        "1": 0.0
+                    }
+                ]
+            }
+        },
+        {
+            "T": {
+                "paytable": [
+                    {
+                        "1": 0.0
+                    }
+                ]
+            }
+        },
+        {
+            "W": {
+                "paytable": null,
+                "special_properties": [
+                    "wild"
+                ]
+            }
+        },
+        {
+            "S": {
+                "paytable": null,
+                "special_properties": [
+                    "scatter"
+                ]
+            }
+        },
+        {
+            "L": {
+                "paytable": [
+                    {
+                        "1": 0.0
+                    }
+                ]
+            }
+        },
+        {
+            "I": {
+                "paytable": [
+                    {
+                        "1": 0.0
+                    }
+                ]
+            }
+        }
+    ],
+    "paddingReels": {}
+}

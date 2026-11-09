@@ -1,0 +1,183 @@
+/* Original industrial-horror skin for the published Sewer Surge build. */
+:root {
+  color-scheme: dark;
+  --sewer-steel: #11191a;
+  --sewer-rust: #8c5730;
+  --sewer-copper: #bd8550;
+  --sewer-toxic: #a7f34a;
+  --sewer-water: #27e5f2;
+}
+
+html,
+body {
+  background:
+    radial-gradient(ellipse at 50% 48%, #102a24 0, #07100f 54%, #030707 100%) !important;
+}
+
+.sewer-stage {
+  background:
+    radial-gradient(ellipse at 50% 52%, #20d9ed1c, transparent 34%),
+    radial-gradient(ellipse at 18% 42%, #9dea3514, transparent 35%),
+    radial-gradient(ellipse at 84% 38%, #a9e84212, transparent 32%),
+    linear-gradient(180deg, #02070722, #02070788);
+}
+
+.game-header {
+  border-color: #9a754d !important;
+  background:
+    linear-gradient(105deg, #111b1b 0%, #29312d 18%, #101717 42%, #202925 72%, #0c1314 100%) !important;
+  box-shadow:
+    inset 0 2px #e5c28a44,
+    inset 0 -7px 14px #000d,
+    0 7px 20px #000d,
+    0 0 25px #21e5ed33 !important;
+}
+
+.game-header h1,
+.game-header h2 {
+  color: #b6f34b !important;
+  text-shadow: 0 2px 0 #352514, 0 0 17px #9aea4766;
+}
+
+.top-hud .readout,
+.top-hud .scatter-readout {
+  border-color: #8d6845 !important;
+  background:
+    linear-gradient(145deg, #303735 0%, #151d1d 32%, #080e10 68%, #252b25 100%) !important;
+  box-shadow:
+    inset 0 1px #e7c89a55,
+    inset 0 -4px 11px #000e,
+    0 0 0 2px #090e0d,
+    0 5px 16px #000b,
+    0 0 17px #1ce2eb1f !important;
+}
+
+.top-hud .readout-title {
+  color: #d3b58a !important;
+  letter-spacing: 0.18em;
+  text-shadow: 0 1px 3px #000;
+}
+
+.payout-readout strong {
+  color: #a9f3f5 !important;
+  text-shadow: 0 0 11px #22e8f088 !important;
+}
+
+.scatter-readout .scatter-slot,
+.scatter-readout [class*="scatter"] {
+  filter: drop-shadow(0 0 5px #a5ef3d66);
+}
+
+.board-shell {
+  border-color: #765334 !important;
+  background:
+    linear-gradient(145deg, #3a3b32 0%, #161e1e 12%, #080e10 29%, #202723 54%, #080d0e 79%, #34382e 100%) !important;
+  box-shadow:
+    inset 0 0 0 2px #c28a4f,
+    inset 0 0 0 5px #111819,
+    inset 0 0 28px #000,
+    0 0 0 2px #080c0d,
+    0 12px 35px #000e,
+    0 0 28px #16dfea3c !important;
+}
+
+.board-rim {
+  border-color: #5b4934 !important;
+}
+
+.pipe-cell {
+  border-color: #786044 !important;
+  background:
+    radial-gradient(circle at 8% 8%, #d7ad6a 0 2px, transparent 2.5px),
+    radial-gradient(circle at 92% 8%, #d7ad6a 0 2px, transparent 2.5px),
+    radial-gradient(circle at 8% 92%, #d7ad6a 0 2px, transparent 2.5px),
+    radial-gradient(circle at 92% 92%, #d7ad6a 0 2px, transparent 2.5px),
+    linear-gradient(145deg, #293333, #0a1112 53%, #202725) !important;
+  box-shadow:
+    inset 0 0 0 2px #0a1012,
+    inset 0 0 17px #000e,
+    0 1px 4px #000,
+    0 0 8px #0008 !important;
+}
+
+.pipe-cell.active {
+  border-color: #52edf2 !important;
+  box-shadow:
+    inset 0 0 0 2px #0a1012,
+    inset 0 0 18px #25e3ef33,
+    0 0 15px #1fe8f277 !important;
+}
+
+.pipe-metal,
+.pipe-bore,
+.pipe-sheen {
+  filter: drop-shadow(0 2px 2px #000c);
+}
+
+.pipe-cell.active .pipe-metal,
+.pipe-cell.active .pipe-bore {
+  filter: drop-shadow(0 0 6px #12e9f2aa);
+}
+
+.board-footer {
+  flex-wrap: wrap;
+  row-gap: 5px;
+  color: #d3c09d !important;
+}
+
+.board-footer::after {
+  display: block;
+  flex-basis: 100%;
+  padding: 5px 10px;
+  border: 1px solid #73573a99;
+  border-radius: 6px;
+  color: #c9d8c5;
+  background: linear-gradient(90deg, #111a18, #17231e, #111a18);
+  content: "BASE 1×  ·  ANTE 3×  ·  BONUS 100×  ·  DEEP RUN 500×     |     RTP 96.5%  ·  MAX WIN 50,000×";
+  font-size: clamp(7px, 0.82vw, 10px);
+  font-weight: 850;
+  letter-spacing: 0.08em;
+  text-align: center;
+  text-shadow: 0 1px 4px #000;
+}
+
+.control-rail {
+  border-color: #9b714699 !important;
+  background:
+    repeating-linear-gradient(135deg, #d19b3b0d 0 8px, transparent 8px 18px),
+    linear-gradient(180deg, #28302b66, #070c0d99) !important;
+  box-shadow:
+    inset 0 1px #dfc18855,
+    inset 0 -7px 12px #000b,
+    0 0 0 4px #11171488,
+    0 0 24px #20e1eb22 !important;
+}
+
+.sewer-rules > summary {
+  border-color: #b9854a !important;
+  color: #d6f581 !important;
+  background: linear-gradient(145deg, #27312c, #0a1111) !important;
+  box-shadow: inset 0 1px #e2bd8155, 0 5px 18px #000b, 0 0 14px #9ce84022 !important;
+}
+
+.rules-panel {
+  border-color: #987148 !important;
+  background:
+    linear-gradient(145deg, #192521f5, #080f11f8 65%, #111917f5) !important;
+}
+
+@media (max-width: 520px) {
+  .board-footer::after {
+    padding: 5px 4px;
+    font-size: 7px;
+    letter-spacing: 0.035em;
+  }
+}
+
+@media (prefers-reduced-motion: reduce) {
+  .sewer-stage *,
+  .sewer-stage *::before,
+  .sewer-stage *::after {
+    scroll-behavior: auto !important;
+  }
+}

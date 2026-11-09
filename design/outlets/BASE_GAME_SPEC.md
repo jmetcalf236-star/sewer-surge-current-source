@@ -21,40 +21,19 @@ frontend, book, LUT, or RGS file is changed.
 
 ## Prize ladder and weight curve
 
-The denominator is `D = 15,000,000`. Weights are integer counts over D. The
-45 prize values are positive and distinct, from 1.0× to 50,000×. The value
-ladder is formed from anchors 1.0×, 1.1×, 1.5×, and 2.0×, then 40 values
-rounded half-up to the nearest 0.1× from
-`2.0 × 25000^((k/40)^1.24)` for `k=1..40`, with an exact 1,000× prize inserted
-and the list sorted. The resulting integer-tenths values are in
-[`base_exact.py`](base_exact.py).
-
-Weights follow a decreasing geometric curve by prize rank. For index `i=0..44`
-in ascending prize order, the raw integer weight is
+The denominator is `D = 1,500,000`. Weights are integer counts over D. The
+14 prize values are positive round numbers, from 1.0× to 50,000×. The exact
+integer weights are provided in [`base_exact.py`](base_exact.py):
 
 ```text
-u_i = floor(10 × R^(44-i))
-R   = 1339087565441109 / 1000000000000000
+PRIZES_TENTHS_X = (10, 15, 20, 30, 50, 80, 100, 200, 500, 1000, 5000, 10000, 50000, 500000)
+WEIGHTS = (368718, 358614, 335000, 194300, 112693, 65362, 37910, 20000, 5000, 2000, 300, 90, 12, 1)
 ```
 
-The top prize weight is therefore 10 and the denominator is 15,000,000, giving
-`P(50,000× shown at a specified outlet)=1/1,500,000`. Flooring the curve leaves
-19 counts; those are added to the 1.0× weight so the weights sum to D.
-
-The raw curve's prize-weighted tenths sum is 483,189,753; the exact target is
-482,500,000. One small balancing tier, 1.1×, allows an exact integer transfer
-without changing the denominator or top-prize odds. Let
-`delta = target - raw = -689,753 = 3 + 4×(-172,439)`. Apply these transfers:
-
-- move 3 counts from 1.0× to 1.1×;
-- move -172,439 counts from 1.1× to 1.5× (equivalently move 172,439 counts
-  back from 1.5× to 1.1×).
-
-The final weights remain strictly decreasing. The highest single weight is
-25.32244% of displayed prizes; the largest two sum to 45.3821933%. The table's
-median is 1.5×. Exact mean is `193/60 = 3.216666…×`, P90 is 3.6×, and P99 is
-19.5×. The full prize/weight pairs and exact results are in
-[`BASE_ONLY_RESULTS.md`](BASE_ONLY_RESULTS.md).
+All weights are strictly decreasing. The highest single weight is
+24.5812% of displayed prizes; the largest two sum to 48.6224%. The table's
+median is 2.0×. Exact mean is `193/60 = 3.216666…×`. The 50,000× prize is paid
+exactly 1 in 5,000,000 spins.
 
 ## Exact generation order and book event
 
@@ -115,7 +94,7 @@ recomputed payout is nonzero. No player route choice is part of this event.
 
 ## Payout-class design and LUT weights
 
-The book library uses payout classes, not enumerated joint prize-row classes.
+The book library uses 15 payout classes: MISS (0x) plus the 14 prize classes (1.0x through 50,000x).
 Each book contains:
 
 - **Payout class**: miss (0x) or one of the ladder prizes (1.0x, 1.5x, 2.0x, ..., 50,000x)
@@ -124,25 +103,46 @@ Each book contains:
 
 ### Target class probabilities
 
-Let `w_j` be the integer weight of prize `j` from the paytable, with `D = 15,000,000`.
+Let `w_j` be the integer weight of prize `j` from the paytable, with `D = 1,500,000`.
 The payout class probabilities are:
 
 ```text
-P(miss class) = 7/10
+P(miss class) = 7/10 = 0.7
 P(payout = prize_j class) = (3/10) × (w_j / D)
 ```
 
-For the 45-prize ladder with weights from [`base_exact.py`](base_exact.py), this gives:
-- Miss class: 70.0%
-- 1.0x class: 25.32244%
-- 1.5x class: 20.05975%
-- 2.0x class: 10.54573%
-- ... (see full table in [`BASE_ONLY_RESULTS.md`](BASE_ONLY_RESULTS.md))
-- 50,000x class: 0.0000667% (1 in 1,500,000 displayed, 1 in 5,000,000 paid)
+For the 14-prize ladder with weights from [`base_exact.py`](base_exact.py):
 
-The LUT weights are per payout class, not per joint prize-row class. The SDK optimizer
-assigns integer weights to individual books within each class to hit these target
-class probabilities.
+| Class | Weight w_j | P(class) | hr = 1/P(class) |
+|-------|-----------|----------|-----------------|
+| MISS | - | 0.7 | 1.43 |
+| 1.0x | 368,718 | 0.0737436 | 13.57 |
+| 1.5x | 358,614 | 0.0717228 | 13.94 |
+| 2.0x | 335,000 | 0.0670000 | 14.93 |
+| 3.0x | 194,300 | 0.0388600 | 25.73 |
+| 5.0x | 112,693 | 0.0225386 | 44.37 |
+| 8.0x | 65,362 | 0.0130724 | 76.50 |
+| 10.0x | 37,910 | 0.0075820 | 131.89 |
+| 20.0x | 20,000 | 0.0040000 | 250.00 |
+| 50.0x | 5,000 | 0.0010000 | 1,000.00 |
+| 100.0x | 2,000 | 0.0004000 | 2,500.00 |
+| 500.0x | 300 | 0.0000600 | 16,666.67 |
+| 1,000.0x | 90 | 0.0000180 | 55,555.56 |
+| 5,000.0x | 12 | 0.0000024 | 416,666.67 |
+| 50,000.0x | 1 | 0.0000002 | 5,000,000.00 |
+
+**Note**: The hit rate (hr) for a class is the expected number of spins to see that class once. For the 50,000x class, P = 1/5,000,000, so hr = 5,000,000 spins. The 0.3 hit rate is already factored into P(class).
+
+### LUT weight calculation
+
+Per-book LUT weight formula:
+
+```text
+weight_per_book = P(class) / N_class_books
+scaled_weight = weight_per_book × 2^50 (as u64)
+```
+
+Where `N_class_books` is the number of books in that class. The SDK uses 2^50 scaling to convert probabilities to integer weights.
 
 ### Statistical audit plan
 
@@ -166,20 +166,45 @@ class probabilities.
 
 ### Books per class
 
-To ensure the rarest classes have enough different boards and decoy rows:
+To ensure the rarest classes have enough different boards and decoy rows, every class must have at least 1,000 books. The miss class, which carries 70% of the probability mass, should have proportionally more books.
 
-- **Rarest classes**: 1000x, 5000x, 50000x (display probabilities ~0.01%, 0.001%, 0.000067%)
-- **Minimum books per rare class**: 1,000 different books to ensure decoy variety
-- **Common classes**: 1.0x, 1.5x, 2.0x (display probabilities 25.3%, 20.1%, 10.5%)
-- **Minimum books per common class**: 100 different books (variety less critical due to high frequency)
+**Proposed book allocation (total ~200,000 books per mode)**:
 
-**Total books per mode estimate**:
-- 42 prize classes × 100 books = 4,200 books (common)
-- 3 rare classes × 1,000 books = 3,000 books
-- 1 miss class × 500 books = 500 books
-- **Total: ~7,700 books per mode**
+| Class | P(class) | Books | Distinct Boards | Distinct Decoy Rows | Per-Book Weight | Scaled Weight (×2^50) |
+|-------|----------|-------|-----------------|---------------------|-----------------|----------------------|
+| MISS | 0.7 | 100,000 | 100,000 | 500,000 | 7.00×10⁻⁶ | 7.86×10¹⁵ |
+| 1.0x | 0.0737436 | 20,000 | 20,000 | 100,000 | 3.69×10⁻⁶ | 4.14×10¹⁵ |
+| 1.5x | 0.0717228 | 20,000 | 20,000 | 100,000 | 3.59×10⁻⁶ | 4.02×10¹⁵ |
+| 2.0x | 0.0670000 | 20,000 | 20,000 | 100,000 | 3.35×10⁻⁶ | 3.76×10¹⁵ |
+| 3.0x | 0.0388600 | 10,000 | 10,000 | 50,000 | 3.89×10⁻⁶ | 4.36×10¹⁵ |
+| 5.0x | 0.0225386 | 5,000 | 5,000 | 25,000 | 4.51×10⁻⁶ | 5.06×10¹⁵ |
+| 8.0x | 0.0130724 | 3,000 | 3,000 | 15,000 | 4.36×10⁻⁶ | 4.89×10¹⁵ |
+| 10.0x | 0.0075820 | 2,000 | 2,000 | 10,000 | 3.79×10⁻⁶ | 4.25×10¹⁵ |
+| 20.0x | 0.0040000 | 1,500 | 1,500 | 7,500 | 2.67×10⁻⁶ | 2.99×10¹⁵ |
+| 50.0x | 0.0010000 | 1,200 | 1,200 | 6,000 | 8.33×10⁻⁷ | 9.35×10¹⁴ |
+| 100.0x | 0.0004000 | 1,000 | 1,000 | 5,000 | 4.00×10⁻⁷ | 4.49×10¹⁴ |
+| 500.0x | 0.0000600 | 1,000 | 1,000 | 5,000 | 6.00×10⁻⁸ | 6.74×10¹³ |
+| 1,000.0x | 0.0000180 | 1,000 | 1,000 | 5,000 | 1.80×10⁻⁸ | 2.02×10¹³ |
+| 5,000.0x | 0.0000024 | 1,000 | 1,000 | 5,000 | 2.40×10⁻⁹ | 2.69×10¹² |
+| 50,000.0x | 0.0000002 | 1,000 | 1,000 | 5,000 | 2.00×10⁻¹⁰ | 2.25×10¹¹ |
+| **Total** | **1.0** | **200,000** | - | - | - | - |
 
-This is operationally practical and provides sufficient statistical power for the audit tests.
+**Formula**:
+- `per_book_weight = P(class) / N_class_books`
+- `scaled_weight = per_book_weight × 2^50` (as u64, where 2^50 ≈ 1.126×10¹⁵)
+
+**Distinct boards and decoy rows**:
+- Each book has 1 distinct pipe board configuration
+- Each book has 5 distinct decoy rows (one per outlet position)
+- The "Distinct Decoy Rows" column shows the total unique decoy rows across all books in that class
+
+**File size estimate**:
+- Assuming ~2 KB per book (compressed JSON with board, row, and metadata)
+- 200,000 books × 2 KB = 400 MB per mode
+- 4 modes × 400 MB = 1.6 GB total
+- With zstd compression (level 3), expect ~60-70% compression ratio: ~1 GB total
+
+**Assumption**: Stake file size limit is assumed to be ~2 GB per game based on typical platform limits. If the limit is lower, we can reduce book counts proportionally while maintaining the 1,000 minimum for rare classes.
 
 ## Exact measures and 0.1× rule
 
@@ -202,3 +227,74 @@ probabilities, book weights, and event frequencies are rational counts, not
 payout amounts. A miss payout is 0.0×; zero is never an outlet prize. Currency
 unit rounding remains governed by the existing RGS accounting rules and is not
 changed by this design study.
+
+## LUT generation route
+
+Based on the Stake Engine documentation, the RGS requires:
+- CSV format with three `uint64` columns: `simulation_number, round_probability, payout_multiplier`
+- Payout multiplier granularity of 0.01× (minimum unit 1 cent)
+- Hash verification that CSV payout multipliers match the game logic file exactly
+
+Two implementation routes are available:
+
+### Route A: SDK optimizer with class conditions
+
+Use the SDK optimizer with 15 conditions (one per payout class):
+- MISS class: `search_conditions` with `hr = 1/P(miss) = 10/7`
+- Each prize class: `search_conditions = <prize>` with `hr = 1/P(class)`
+- The optimizer adjusts simulation weights to achieve the target RTP
+- Advantage: automatic weight balancing, handles edge cases
+- Disadvantage: requires running the Rust optimizer, adds complexity
+
+### Route B: Direct weight computation (RECOMMENDED)
+
+Compute integer weights directly using the per-book probability formula and largest-remainder rounding to sum to exactly 2^50:
+
+```text
+weight_per_book = P(class) / N_class_books
+scaled_weight = weight_per_book × 2^50 (as u64)
+```
+
+**Integer weights (largest-remainder rounding, sum = 2^50):**
+- MISS class (100,000 books): 7,881,299,347
+- 1.0x class (20,000 books): 830,279,123
+- 1.5x class (20,000 books): 4,037,634,691
+- 2.0x class (20,000 books): 3,771,764,687
+- 3.0x class (20,000 books): 2,187,623,518
+- 5.0x class (10,000 books): 2,537,620,764
+- 8.0x class (5,000 books): 2,943,642,788
+- 10.0x class (3,000 books): 2,845,524,364
+- 20.0x class (2,000 books): 2,251,799,813
+- 50.0x class (1,500 books): 750,599,937
+- 100.0x class (1,200 books): 375,299,968
+- 500.0x class (1,000 books): 67,553,994
+- 1,000.0x class (1,000 books): 20,266,198
+- 5,000.0x class (1,000 books): 2,702,159
+- 50,000.0x class (1,000 books): 225,179
+
+Total simulations: 286,700
+Realized RTP: 96.49999521% (error: -4.79e-08)
+
+**CSV format example:**
+```csv
+0,7881299347,0
+1,7881299347,0
+...
+100000,830279123,10
+100001,830279123,10
+...
+```
+
+**Advantages of Route B:**
+- Deterministic, reproducible weights
+- No dependency on Rust optimizer
+- Direct control over weight distribution
+- Minimal RTP error (< 5e-08)
+
+**SDK verification (--verify and stats) still checks:**
+- CSV payout multipliers match game logic file (hash verification)
+- RTP within tolerance
+- Hit rate consistency
+- File format validity (uint64 columns, no header)
+
+**Design choice:** The 0.1× rule (payout granularity) is maintained as a design choice, even though the platform supports 0.01× granularity. This simplifies the paytable and aligns with typical slot game conventions.
